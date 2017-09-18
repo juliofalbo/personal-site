@@ -1,0 +1,2935 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Júlio Silveira</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- CSS Font Icon and Plugins -->
+    <link href="assets/font/fa/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/font/tello/css/fontello.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/animation.css" rel="stylesheet" />
+    <!-- Theme of Design -->
+    <link href="assets/css/style.css" rel="stylesheet" />   
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="assets/images/faicon.png" />
+    <link rel="apple-touch-icon" sizes="129x129" href="assets/images/icon.png" /> 
+    
+    <link href="assets/css/yourcss.css" rel="stylesheet" /> 
+  </head>
+  
+  <body>
+    <!-- =========
+    Start Wrapper Page
+    ===================================-->
+    <div id="wrapper">
+      <div class="container" >
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+
+            <!-- =========
+            Start portrait section
+            ===================================-->
+            <header class="portrait">
+              <div class="bg-line"></div>
+              <div class="body-portrait">
+
+                <!-- =========
+                Start Note Slider
+                ===================================-->
+                <div class="box-note">
+                  <div id="slider-note" class="carousel slide" data-ride="carousel" data-interval="10000">
+                    
+                    <div class="carousel-inner">
+                    
+                    	<div class="item active">
+                    	
+                    		<div th:if="${retorno}">
+		                    	<script type="text/javascript">
+			                    	window.onload = function(){
+			                    		var open = $('#open-content');
+			                    		open.click();
+			                    	}	                    	
+		                    	</script>
+		                    	<span th:text="${retorno}"></span>
+		                    </div>
+		                     <div th:unless="${retorno}">
+	                       		"Any fool can write code that a computer can understand. Good programmers write code that humans can understand." - <i>Martin Fowler</i>
+	                       	</div>
+	                       	
+	                    </div>
+	                    
+	                    <div class="item">
+	                        Encantado com a dinâmica junto ao sistema operacional, escolhi o Java para ser a linguagem de programação na qual iria me especializar.
+	                    </div>
+	                    
+                    </div>
+                  </div>
+                </div>
+                <!-- =========
+                End Note Slider
+                ===================================-->
+
+                <!-- =========
+                Start portrait image Section
+                ===================================-->
+                <div class="portrait-img-area">
+                  <img src="assets/images/avatar.png" alt="avatar" class="avatar" />
+                  <div class="profile-links">
+                    <a href="https://github.com/juliosilveira77" class="facebook" target="_blank" data-toggle="tooltip" data-placement="left" title="GitHub"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/j%C3%BAlio-silveira-632b8689" class="twitter" target="_blank" data-toggle="tooltip" data-placement="right" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+                <!-- =========
+                End  portrait image Section
+                ===================================-->
+
+                <!-- =========
+                Start Show Yor Name Section
+                ===================================-->
+                <h1 class="name">Júlio Silveira <small>full stack web developer</small></h1>
+                <img src="assets/images/arrow-down.png" alt="" class="img-arrow" />
+                <a href="javascript:void(0)" class="btn btn-flat " id="open-content">Quem sou eu? Descubra aqui!</a>
+                <img src="assets/images/arrow-down.png" alt="" class="img-arrow" />
+                <!-- =========
+                Start Show Yor Name Section
+                ===================================-->
+
+              </div>
+            </header>
+            <!-- =========
+            End portrait section
+            ===================================-->
+
+
+            <!-- =========
+            Start Content section
+            ===================================-->
+            <section class="content" id="main-content">
+
+              <!-- =========
+              Start navigation section
+              ===================================-->
+              <nav id='navigation'>
+                <ul class="navigation-list clearfix list-unstyled">
+                  <li class="active"><a href="#about" data-toggle="tab" data-menu="about"><i class="icon-user"></i> <span>Home</span></a></li>
+                  <li><a href="#resume" data-toggle="tab" data-menu="resume"><i class="icon-newspaper"></i>  <span>História</span></a></li>
+                  <li><a href="#depoimento" data-toggle="tab" data-menu="depoimento"><i class="icon-newspaper"></i>  <span>Depoimento</span></a></li>
+                  <li><a href="#portfolio" data-toggle="tab" data-menu="portfolio"><i class="icon-folder-open"></i> <span>Portfolio</span></a></li>
+                  <li><a href="#blog" data-toggle="tab" data-menu="blog"><i class="icon-pencil"></i> <span >Blog</span></a></li>
+                  <li><a href="#contact" data-toggle="tab" data-menu="contact"><i class="icon-mail"></i> <span>Contato</span></a></li>
+                </ul>
+              </nav>
+              <!-- =========
+              End navigation section
+              ===================================-->
+
+
+              <!-- =========
+              Start tab content section
+              ===================================-->
+              <div class="tab-content">
+
+
+                <!-- =========
+                Start About tab content section
+                ===================================-->
+                <div id='about' class="tab-pane  fade in  active">
+                  <div class="body-content">
+
+                    <!-- =========
+                    Start About your self section
+                    ===================================-->
+                    <div class="row">
+                      <div class="col-md-3 text-center">
+                        <img src="assets/images/avatar.png" alt="avatar" class="img-responsive img-profile" />
+                      </div>
+                      <div class="col-md-9">
+                        <div class="mini-desc">
+                          <h2 class="title">Prazer, Júlio Silveira!</h2>
+                          <p>
+                              Há 5 anos e 8 meses sou movido pela sede de conhecimento e pela incansável necessidade de me manter atualizado.
+                              Meu interesse na área de desenvolvimento de software e apps se renova em paralelo com a constante evolução das tecnologias.
+                          </p>
+                          <p>
+                            Encantado com a dinâmica junto ao sistema operacional, escolhi o Java para ser a linguagem de programação na qual iria me especializar.
+                            Com um casamento de quase 6 anos, tenho orgulho em falar que renovo meus votos com o Java todos os dias, apesar de as vezes dar uma fugida e me entreter com framewoks Front-End. 
+                            <br />
+                            $("#nao-me-julgue");
+                          </p> 
+                          <p>
+                            Tenho orgulho em falar que, no meu 1º ano de casamento, tive a oportunidade de apimentá-lo com a ajuda do BPM.
+                          </p> 
+                          <p>
+                            Como em qualquer relacionamento, não podemos entrar em uma rotina, por isso, mesmo com 4 anos e 8 meses de envolvimento diário, estou em uma constante busca para melhorar meu desempenho e com isso, gerar softwares/apps mais performáticos e de fácil manutenção, afinal, por que não facilitar a vida dos padrastos?
+                          </p> 
+                        </div>
+                      </div>
+                    </div>
+                    <!-- =========
+                    End About your self section
+                    ===================================-->
+
+                    <!-- =========
+                    Start List Indentity and services your self  section
+                    ===================================-->
+                    <div class="deviter"></div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="title with-icon"><i class="fa fa-credit-card icn-title"></i> Identificação</h3>
+                        <div class="identity-area">
+                          <div class="row">
+                            <div class="col-sm-4"><label>Nome</label></div>
+                            <div class="col-sm-8"> Júlio Silveira</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>Aniversário</label></div>
+                            <div class="col-sm-8"> 4 de março de 1993</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>Celular</label></div>
+                            <div class="col-sm-8"> +55 21 98867-9866</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>Email</label></div>
+                            <div class="col-sm-8"> julio.silveira.rj@gmail.com</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>Skype</label></div>
+                            <div class="col-sm-8"> juliosilveirarj</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>Website</label></div>
+                            <div class="col-sm-8"> <a target="_blank" href="https://wrapbootstrap.com/user/yobio">juliosilveiradev.com</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="title with-icon"><i class="fa fa-bell-o icn-title"></i> Especialidades</h3>
+                        <div class="box-block">
+                          <ul class="list-unstyled list-strip">
+                            <li><i class="fa fa-check"></i> Desenvolvedor Fullstack</li>
+                            <li><i class="fa fa-check"></i> Especialista em Java</li>
+                            <li><i class="fa fa-check"></i> Curioso em IONIC</li>
+                            <li><i class="fa fa-check"></i> Eterno estudante</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- =========
+                    End List Indentity and services your self section
+                    ===================================-->
+
+
+                    <!-- =========
+                    Start List fact your self section
+                    ===================================-->
+                    <div class="deviter"></div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <h3 class="title with-icon"><i class="fa fa-check-square-o icn-title"></i> FATOS</h3>
+                        <div class="box-fact-area">
+                          <div class="row">
+                            <div class="col-sm-3">
+                              <div class="box-fact">
+                                <i class="fa fa-star-o icn-fixed"></i> 7 GRANDES PROJETOS ENTREGUES
+                              </div>
+                            </div>
+                            <div class="col-sm-3">
+                              <div class="box-fact">
+                                <i class="fa fa-smile-o icn-fixed"></i> 400+ CLIENTES FELIZES
+                              </div>
+                            </div>
+                            <div class="col-sm-3">
+                              <div class="box-fact">
+                                <i class="fa fa-globe  icn-fixed"></i> PROJETOS A NÍVEL NACIONAL
+                              </div>
+                            </div>
+                            <div class="col-sm-3">
+                              <div class="box-fact">
+                                <i class="fa fa-calendar-o icn-fixed"></i> 6 ANOS DE EXPERIÊNCIA
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- =========
+                    End List fact your self section
+                    ===================================-->
+
+                    <!-- =========
+                    Start List your  client  and testimonial section
+                    ===================================-->
+                    <div class="deviter"></div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="title with-icon "><i class="fa fa-users icn-title"></i> Network</h3>
+                        <div class="box-block">
+                          <ul class="list-unstyled list-clients clearfix">
+                            <li><a href="http://www.rio.rj.gov.br/" target="_blank"><img src="assets/images/client/pcrj.png"  alt="" class="img-responsive" /></a></li>
+                            <li><a href="http://www.rio.rj.gov.br/web/iplanrio" target="_blank"><img src="assets/images/client/iplan.png" alt="" class="img-responsive" /></a></li>
+                             <li><a href="http://www.unimedrio.com.br/" target="_blank"><img src="assets/images/client/unimed.png" alt="" class="img-responsive" /></a></li>
+                            <li><a href="http://www.bradescosaude.com.br" target="_blank"><img src="assets/images/client/bradesco.png" alt="" class="img-responsive" /></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="title with-icon"><i class="fa fa-comments-o icn-title"></i> Testemunhos</h3>
+                        <div class="box-block">
+                          <div id='testimonial-slider' class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                <div class="box-testimonial">
+                                  <div class="oComment">
+                                    <h5>interactive designer</h5>
+                                    <p> Jhonny Doe is an excellent designer and completed the project successfully. I would hire him again</p>
+                                    <div class="text-right date-post"><small>Post: 1 Minute Ago</small></div>
+                                  </div>
+                                  <img src="assets/images/avatar.png" alt='' />
+                                </div>
+                              </div>
+                              <div class="item ">
+                                <div class="box-testimonial">
+                                  <div class="oComment">
+                                    <h5>interactive designer</h5>
+                                    <p> Jhonny Doe is an excellent designer and completed the project successfully. I would hire him again</p>
+                                    <div class="text-right date-post"><small>Post: 1 Minute Ago</small></div>
+                                  </div>
+                                  <img src="assets/images/avatar.png" alt='' />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="control-testi-slider">
+                              <a href="#testimonial-slider" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                              <a href="#testimonial-slider" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- =========
+                    End List your  client  and testimonial section
+                    ===================================-->
+
+                  </div>
+                </div>
+                <!-- =========
+                End About tab content section
+                ===================================-->
+
+
+
+                <!-- =========
+                Start resume tab content section
+                ===================================-->
+                <div id='resume' class="tab-pane fade">
+                  <div class="body-content">
+                    <div class="row">
+                      <div class="col-md-8">
+
+
+                        <!-- =========
+                        Start Time line section
+                        ===================================-->
+                        <h3 class="title with-icon"><span class="glyphicon glyphicon-plane icn-title"></span> Histórico Profissional</h3>
+                        <div class="box-block">
+                          <div class="time-line">
+
+                           <div class="item-event current">
+                              <span class="date">2016</span>
+                              <div class="event-content">
+                                <h4>Líder de Desenvolvimento</h4>
+                                <h5><a href="https://www.neomind.com.br/fusion/site/#/home" target="_blank"> Neomind Solutions</a></h5>
+                                <p>
+                                  No momento estamos em fase final de estabilização do <strong>Rio Mais Fácil Négócios</strong>.
+                                </p>
+                              </div>
+                            </div>
+
+                            <div class="item-event">
+                              <span class="date">2015/6</span>
+                              <div class="event-content">
+                                <h4>Líder de Desenvolvimento</h4>
+                                <h5><a href="https://www.neomind.com.br/fusion/site/#/home" target="_blank"> Neomind Solutions</a></h5>
+                                
+                                  Com o sucesso do sistema <strong>Fusion ECM Suite 3.2.0</strong> novas portas se abriram e a <strong>Neomind</strong> se tornou a empresa responsável pela criação dos projetos <strong>Rio Mais Fácil Eventos</strong> e do <strong>Rio Mais Fácil Negócios</strong>.
+                                  <br />
+                                  Projetos de grande impacto, tanto político, quanto social, ambos com o objetivo de <strong>desburocratizar a emissão de alvarás no Município do Rio de Janeiro</strong>.
+                                  <br />
+                                  O primeiro fluxo a ser desenvolvido foi o <strong>Rio Mais Fácil Eventos</strong>.
+                                  <br />
+                                  Tive a honra de participar de todas as fases do projeto, desde o levantamento dos requisitos até a implantação em produção.
+                                  <br />
+                                  Contando novamente com uma equipe séria e dedicada e com a parceria da <strong>IPLANRIO</strong> o projeto foi entregue com sucesso para a <strong>Secretaria Municipal de Ordem Pública (SEOP)</strong> e com grande repercussão em todo o <strong>Município do Rio de Janeiro</strong>.
+                                  <br />
+                                  Com o estabilização do projeto <strong>Rio Mais Fácil Eventos</strong>, foi iniciada a criação do fluxo <strong>Rio Mais Fácil Négócios</strong>.
+                                  <br />
+                                  Novamente tive a honra de participar ativamente de todas as etapas do projeto.
+                                  <br />
+                                  Mais um grande desafio em minha carreira.
+                                  <br />
+                                  Não preciso falar como o trabalho foi duro e como toda a equipe foi implacável, deixo os links abaixo falarem por mim:
+                                  <ul>
+                                    <li>
+                                      <a href="http://prefeitura.rio/web/riomaisfacil" target="_blank">Link Oficial dos Projetos <strong>Rio Mais Fácil</strong></a>
+                                    </li>
+                                    <li>
+                                      <a href="http://odia.ig.com.br/rio-de-janeiro/2016-06-16/rio-agiliza-abertura-de-novas-empresas.html" target="_blank">Matéria <strong>O Dia</strong></a>
+                                    </li>
+                                    <li>
+                                       <a href="http://www.rj.agenciasebrae.com.br/sites/asn/uf/RJ/processo-de-desburocratizacao-inicia-segunda-etapa-no-rio-de-janeiro,cbc6201221455510VgnVCM1000004c00210aRCRD" target="_blank">Matéria <strong>SEBRAE</strong></a>
+                                    </li>
+                                     <li>
+                                      <a href="http://www.prefeitoempreendedor.sebrae.com.br/noticias/noticia.php?id=1720" target="_blank">
+                                        9º Prêmio SEBRAE <strong>Prefeito Empreendedor</strong>
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                  Decretos criados para possibilitar a implantação dos projetos:
+                                  <ul>
+                                    <li>
+                                      <a href="http://www.contabeis.com.br/legislacao/470602/decreto-rj-40711-2015/" target="_blank">Rio Mais Fácil Eventos - Decreto 40711/2015</a>
+                                    </li>
+                                    <li>
+                                      <a href="http://www.contabeis.com.br/legislacao/1020143/decreto-rj-41827-2016/" target="_blank">Rio Mais Fácil Negócios - Decreto 41827/2016</a>
+                                    </li>
+                                  </ul>
+
+                                  Seguem abaixo as tecnologias utilizadas em ambos os projeto:
+                                  <ul>
+                                    <li>
+                                      Servidor de aplicação: <strong>Tomcat 7</strong>
+                                    </li>
+                                    <li>
+                                      IDE: <strong>Eclipse IDE</strong>
+                                    </li>
+                                    <li>
+                                      Controle de Versão: <strong>Subversion SVN</strong>
+                                    </li>
+                                    <li>
+                                      Gerenciador de dependências: <strong>Maven</strong>
+                                    </li>
+                                    <li>
+                                      Ferramenta para Gerenciamento de Projetos: <strong>JIRA</strong>
+                                    </li>
+                                    <li>
+                                      Biblioteca Javascript: <strong>JQuery</strong>
+                                    </li>
+                                    <li>
+                                      Framework Javascript: <strong>AngularJS</strong>
+                                    </li>                                    
+                                    <li>
+                                      Plataforma Java: <strong>JEE7</strong>
+                                    </li>
+                                    <li>
+                                      Integrações: <strong>SOAP / REST</strong>
+                                    </li>
+                                    <li>
+                                      ORM: <strong>Hibernate</strong>
+                                    </li>
+                                    <li>
+                                      Template Engine: <strong>Velocity</strong>
+                                    </li>
+                                    <li>
+                                      Relatórios: <strong>IReport</strong>
+                                    </li>
+                                    <li>
+                                      Banco de dados: <strong>SQL Server 2008 R2</strong>
+                                    </li>
+                                    <li>
+                                     <strong>Workflow/BPM (Gerenciamento dos processos de negócio)</strong>
+                                    </li>
+                                    <li>
+                                      <strong>GED (Gerenciamento eletrônico de documentos)</strong>
+                                    </li>
+                                  </ul>
+                                
+                              </div>
+                            </div>
+
+                            <div class="item-event">
+                              <span class="date">2014</span>
+                              <div class="event-content">
+                                <h4>Analista Desenvolvedor Pleno</h4>
+                                <h5><a href="https://www.neomind.com.br/fusion/site/#/home" target="_blank"> Neomind Solutions</a></h5>
+                                
+                                  Após os 2 anos como Analista Desenvolvedor Júnior, veio a promoção para Analista Desenvolvedor Pleno.
+                                  <br />
+                                  Junto com a promoção veio o projeto mais desafiador até então: A migração do sistema <strong>PAVitual</strong> da <strong>Procuradoria Geral do Município do Rio de Janeiro</strong>  Fusion ECM Suite versão 2.3.5 para a versão 3.2.0.
+                                  <br />
+                                  Após algumas noites trabalhando e contando com a dedicação de toda a equipe, o sistema foi migrado e a <strong>Procuradoria Geral do Município do Rio de Janeiro</strong> se tornou a mais nova empresa a fazer parte do time <strong>Casos de Sucesso da Neomind</strong>. É possível acessar o pdf clicando <a href="https://www.neomind.com.br/fusion/portal_neomind/main.jsp?pagecode=casospgm" target="_blank">aqui</a>.
+                                  <br />
+                                  Ao migrar de versão, algumas tecnologias foram atualizadas e outras substituídas.
+                                  Seguem abaixo as tecnologias utilizadas na migração:
+                                  <ul>
+                                    <li>
+                                      Servidor de aplicação: <strong>Tomcat 7</strong>
+                                    </li>
+                                    <li>
+                                      IDE: <strong>Eclipse IDE</strong>
+                                    </li>
+                                    <li>
+                                      Controle de Versão: <strong>Subversion SVN</strong>
+                                    </li>
+                                    <li>
+                                      Gerenciador de dependências: <strong>Maven</strong>
+                                    </li>
+                                    <li>
+                                      Biblioteca Javascript: <strong>JQuery</strong>
+                                    </li>
+                                    <li>
+                                      Framework Javascript: <strong>AngularJS</strong>
+                                    </li>                                    
+                                    <li>
+                                      Plataforma Java: <strong>JEE7</strong>
+                                    </li>
+                                    <li>
+                                      Integrações: <strong>SOAP / REST</strong>
+                                    </li>
+                                    <li>
+                                      ORM: <strong>Hibernate</strong>
+                                    </li>
+                                    <li>
+                                      Template Engine: <strong>Velocity</strong>
+                                    </li>
+                                    <li>
+                                      Relatórios: <strong>IReport</strong>
+                                    </li>
+                                    <li>
+                                      Banco de dados: <strong>SQL Server 2008 R2</strong>
+                                    </li>
+                                    <li>
+                                     <strong>Workflow/BPM (Gerenciamento dos processos de negócio)</strong>
+                                    </li>
+                                    <li>
+                                      <strong>GED (Gerenciamento eletrônico de documentos)</strong>
+                                    </li>
+                                  </ul>
+                                
+                              </div>
+                            </div>
+                            <div class="item-event">
+                              <span class="date">2012</span>
+                              <div class="event-content">
+                                <h4>Analista Desenvolvedor Júnior</h4>
+                                <h5><a href="https://www.neomind.com.br/fusion/site/#/home" target="_blank"> Neomind Solutions</a></h5>
+                                
+                                  Não tenho palavras para expressar minha gratidão pela confiança que a <strong>Neomind</strong> teve, e tem até hoje, em mim.
+                                  <br />
+                                  Aqui foi onde superei os maiores desafios da minha vida.
+                                  <br />
+                                  Comecei trabalhando como <strong>Analista Desenvolvedor Júnior</strong> responsável pela manutenção do sistema <strong>PAVitual</strong> da <strong>Procuradoria Geral do Município do Rio de Janeiro</strong>.
+                                  <br />
+                                  Fui logo apresentado ao <strong>BPM (Gerenciamento de Processos Negócio)</strong> e inserido no mundo <strong>ECM (Enterprise Content Management)</strong>.
+                                  <br />
+                                  Foram 2 anos de intensa dedicação, criando novas funcionalidades para a versão 2.3.5 do <strong>Fusion ECM Suite</strong> e com isso facilitando a vida de Estagiários, Auxiliares, Residentes e Procuradores.
+                                  <br />
+                                  Nesses 2 anos, tive intenso contato com as seguintes tecnologias:
+                                  <ul>
+                                    <li>
+                                      Servidor de aplicação: <strong>Tomcat 6</strong>
+                                    </li>
+                                    <li>
+                                      IDE: <strong>Eclipse IDE</strong>
+                                    </li>
+                                    <li>
+                                      Controle de Versão: <strong>Subversion SVN</strong>
+                                    </li>
+                                    <li>
+                                      Gerenciador de dependências: <strong>Maven</strong>
+                                    </li>
+                                    <li>
+                                      Biblioteca Javascript: <strong>JQuery</strong>
+                                    </li>
+                                    <li>
+                                      Plataforma Java: <strong>JEE6</strong>
+                                    </li>
+                                    <li>
+                                      Integrações: <strong>SOAP</strong>
+                                    </li>
+                                    <li>
+                                      ORM: <strong>Hibernate</strong>
+                                    </li>
+                                    <li>
+                                      Framework: <strong>Velocity</strong>
+                                    </li>
+                                    <li>
+                                      Relatórios: <strong>IReport</strong>
+                                    </li>
+                                    <li>
+                                      Banco de dados: <strong>SQL Server 2008 R2</strong>
+                                    </li>
+                                    <li>
+                                      Workflow/BPM (Gerenciamento dos processos de negócio)
+                                    </li>
+                                    <li>
+                                      GED (Gerenciamento eletrônico de documentos)
+                                    </li>
+                                  </ul>
+                                
+                              </div>
+                            </div>
+                            <div class="item-event">
+                              <span class="date">2012</span>
+                              <div class="event-content">
+                                <h4>Estagiário Java</h4>
+                                <h5><a href="http://www.calandra.com.br/" target="_blank">Calandra Soluções</a></h5>
+                                
+                                  Apesar do curto período na empresa, trago comigo um carinho enorme e um agradecimento eterno a todos que, de algum modo, contribuiram para o que sou hoje.
+                                  <br />
+                                  Aqui tive meu primeiro contato com um cliente público.
+                                  Participei da criação do <strong>SEPLAG</strong>, um sistema criado para a <strong>Secretaria do Planejamento e Gestão</strong> visando agregar aspectos colaborativos na gestão orçamentária estadual, tal como propiciar um melhor uso das informações disponíveis no sistema.
+                                  <br />
+                                  Abaixo listo as tecnologias que utilizei na empresa:
+                                  <ul>
+                                    <li>
+                                        Servidor de aplicação: <strong>JBoss 6</strong>
+                                    </li>
+                                    <li>
+                                        IDE: <strong>Eclipse IDE</strong>
+                                    </li>
+                                    <li>
+                                        Controle de Versão: <strong>Subversion SVN</strong>
+                                    </li>
+                                    <li>
+                                        Ferramenta para Gerenciamento de Projetos: <strong>Redmine</strong>
+                                    </li>
+                                    <li>
+                                      Frameworks: <strong>Struts 2</strong> e <strong>Spring</strong>
+                                    </li>
+                                    <li>
+                                      Biblioteca Javascript: <strong>JQuery</strong>
+                                    </li>
+                                    <li>
+                                      ORM: <strong>Hibernate</strong>
+                                    </li>
+                                    <li>
+                                      Relatórios: <strong>IReport</strong>
+                                    </li>
+                                    <li>
+                                      Banco de dados: <strong>SQL Server 2008 R2</strong>
+                                    </li>
+                                  </ul>
+                                
+                              </div>
+                            </div>
+                            <div class="item-event last">
+                              <span class="date">2011</span>
+                              <div class="event-content">
+                                <h4>Desenvolvedor Java Trainee</h4>
+                                <h5><a href="http://www.acol.com.br/" target="_blank">Acol Consultoria e Sistemas</a></h5>
+                                
+                                  Onde tudo começou!
+                                  <br />
+                                  Empresa a qual devo tudo que sou hoje. 
+                                  <br />
+                                  Aqui não aprendi somente Java, aprendi que nenhum programador trabalha sozinho, aprendi que numa equipe, não existem erros ou acertos individuais, se um erra, todos erram, se um acerta, todos acertam.
+                                  <br />
+                                  Aprendi também que amizades criadas a partir de um "Como é mesmo que se faz um for?" podem durar anos e principalmente, aprendi a lição que trago comigo todos os dias até hoje:
+                                  <ul>
+                                    <li>
+                                      <strong>Todo programador é um eterno estudante.</strong>
+                                    </li>
+                                  </ul>
+                                  Projetos em que atuei, tanto na manutenção, quanto no desenvolvimento de novas funcionalidades:
+                                  <ul>
+                                    <li>
+                                      Projeto SCAM - Sistema de Contas de Analise Médica (BRADESCO).
+                                    </li>
+                                    <li>
+                                      Projeto SAUDI - Sistema de Contas de Analise Médica (UNIMED).
+                                    </li>
+                                  </ul>
+                                  Durante minha caminhada na empresa, fiz uso das seguintes tecnologias:
+                                  <ul>
+                                    <li>Servidor de aplicação: <strong>JBoss 6</strong> e <strong>WebSphere</strong></li>
+                                    <li>IDE: <strong>Eclipse IDE</strong> e <strong>Rational Application Developer for WebSphere Software (RAD)</strong></li>
+                                    <li>Controle de Versão: <strong>CVS</strong></li>
+                                    <li>Ferramenta para Gerenciamento de Projetos: <strong>Redmine</strong></li>
+                                    <li>Plataforma Java: <strong>JEE6</strong></li>
+                                    <li>Servidor de aplicação: <strong>JBoss 6</strong></li>
+                                    <li>Componente JEE: <strong>EJB</strong></li>
+                                    <li>Framework: <strong>Struts / Struts2</strong></li>
+                                    <li>Biblioteca Javascript: <strong>Dojo Toolkit</strong></li>
+                                    <li>Conexão com banco de dados: <strong>JDBC</strong></li>
+                                    <li>Relatórios: <strong>IReport</strong></li>
+                                    <li>Banco de dados: <strong>Oracle 10g</strong></li>
+                                  </ul>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- =========
+                        End Time line section
+                        ===================================-->
+
+                        <!-- =========
+                        Start Time line section
+                        ===================================-->
+                        <div class="deviter"></div>
+                        <h3 class="title with-icon"><span class="fa fa-book icn-title"></span> Histórico Estudantil</h3>
+                        <div class="box-block">
+                          <div class="time-line">
+
+                          <div class="item-event current">
+                              <span class="date">2016</span>
+                              <div class="event-content">
+                                <h4>The Web Developer Bootcamp</h4>
+                                <h5><a href="https://www.udemy.com/the-web-developer-bootcamp/learn/v4/content" target="_blank">Udemy</a></h5>
+                                
+                                  Carga horária: <strong>42,5 horas</strong>.
+                                  <br />
+                                  Objetivo: The only course you need to learn web development - HTML, CSS, JS, Node, and More!
+                                  <br /><br />
+                                  Conteúdo do Curso:
+                                  <ul>
+                                    <li>
+                                      <strong>Introduction to Front End Development</strong>
+                                    </li>
+                                     <li>
+                                      <strong>Introduction to HTML</strong>
+                                    </li>
+                                     <li>
+                                      <strong>Intermediate HTML</strong>
+                                    </li>
+                                     <li>
+                                      <strong>Introduction to CSS</strong>
+                                    </li>
+                                     <li>
+                                      <strong>Intermediate CSS</strong>
+                                    </li>
+                                     <li>
+                                      <strong>Bootstrap</strong>
+                                    </li>
+                                     <li>
+                                      <strong>Introduction to JavaScript</strong>
+                                    </li>
+                                     <li>
+                                      <strong>Javascript Basics: Control Flow</strong>
+                                    </li>
+                                     <li>
+                                      <strong>Javascript Basics: Functions</strong>
+                                    </li>
+                                     <li>
+                                      <strong>Javascript Basics: Arrays</strong>
+                                    </li>
+                                     <li>
+                                      <strong>Javascript Basics: Objects</strong>
+                                    </li>
+                                     <li>
+                                      <strong>DOM Manipulation</strong>
+                                    </li>
+                                    <li>
+                                      <strong>Advanced DOM Manipulation</strong>
+                                    </li>
+                                    <li>
+                                      <strong>Color Game Project</strong>
+                                    </li>
+                                    <li>
+                                      <strong>Intro to jQuery</strong>
+                                    </li>
+                                    <li>
+                                      <strong>Advanced jQuery</strong>
+                                    </li>
+                                    <li>
+                                      <strong>Todo List Projects</strong>
+                                    </li>
+                                    <li>
+                                      <strong>OPTIONAL Project: Patatap Clone</strong>
+                                    </li>
+                                    <li>
+                                      <strong>Backend Basics</strong>
+                                    </li>
+                                    <li>
+                                      <strong>The Command Line</strong>
+                                    </li>
+                                    <li>
+                                      <strong>Node JS</strong>
+                                    </li>
+                                    <li>
+                                      <strong>Server Side Frameworks</strong>
+                                    </li>
+                                    <li>
+                                      <strong>Intermediate Express</strong>
+                                    </li>
+                                    <li>
+                                      <strong>Working With API's</strong>
+                                    </li>
+                                    <li>
+                                      <strong>YelpCamp: Basics</strong>
+                                    </li>
+                                    <li>
+                                      <strong>Databases</strong>
+                                    </li>
+                                    <li>
+                                      <strong>YelpCamp: Data Persistance</strong>
+                                    </li>
+                                    <li>
+                                      <strong>RESTful Routing</strong>
+                                    </li>
+                                    <li>
+                                      <strong>Data Associations</strong>
+                                    </li>
+                                    <li>
+                                      <strong>YelpCamp: Comments</strong>
+                                    </li>
+                                    <li>
+                                      <strong>Authentication</strong>
+                                    </li>
+                                    <li>
+                                      <strong>YelpCamp: Adding Authentication</strong>
+                                    </li>
+                                    <li>
+                                      <strong>YelpCamp: Cleaning Up</strong>
+                                    </li>
+                                    <li>
+                                      <strong>YelpCamp: Update and Destroy</strong>
+                                    </li>
+                                    <li>
+                                      <strong>YelpCamp: UI Improvements</strong>
+                                    </li>
+                                    <li>
+                                      <strong>Git and Github</strong>
+                                    </li>
+                                    <li>
+                                      <strong>Deploying</strong>
+                                    </li>
+                                    <li>
+                                      <strong>JavaScript: The Tricky Stuff</strong>
+                                    </li>
+                                  </ul>
+                                
+                              </div>
+                            </div>
+
+
+                            <div class="item-event">
+                              <span class="date">2014</span>
+                              <div class="event-content">
+                                <h4>Arquitetura e Design de Projetos em Java</h4>
+                                <h5><a href="https://www.caelum.com.br/" target="_blank">Caelum</a></h5>
+                                
+                                  Carga horária: <strong>40 horas</strong>.
+                                  <br />
+                                  Objetivo: É um curso que busca dar ao Arquiteto Java a capacidade de criticar e fazer escolhas.
+                                  <br /><br />
+                                  Conteúdo do Curso:
+                                  <ul>
+                                    <li>
+                                      <strong>Um treinamento sobre arquitetura</strong>
+                                    </li>
+                                    <ul>
+                                      <li>
+                                        Design e Arquitetura?
+                                      </li>
+                                      <li>
+                                        Indo da visão micro para a visão macro e gerenciamento
+                                      </li>
+                                    </ul>
+
+                                    <li>
+                                      <strong>A Plataforma Java</strong>
+                                    </li>
+                                    <ul>
+                                      <li>
+                                        Java
+                                      </li>
+                                      <li>
+                                        JSRs e o JCP
+                                      </li>
+                                      <li>
+                                        Open source e o Java
+                                      </li>
+                                      <li>
+                                        Exercícios: explorando o JCP
+                                      </li>
+                                      <li>
+                                        Java Virtual Machine
+                                      </li>
+                                      <li>
+                                        Implementações da JVM
+                                      </li>
+                                      <li>
+                                        Outras plataformas: .NET
+                                      </li>
+                                      <li>
+                                        Outras linguagens na JVM
+                                      </li>
+                                      <li>
+                                        Exercícios: Scala integrado com Java
+                                      </li>
+                                      <li>
+                                        Exercícios: Scripting API com Rhino
+                                      </li>
+                                      <li>
+                                        Para saber mais: Como aprender Scala
+                                      </li>
+                                    </ul>
+
+                                    <li>
+                                      <strong>JVM: Java Virtual Machine</strong>
+                                    </li>
+                                    <ul>
+                                      <li>
+                                        A JVM por dentro
+                                      </li>
+                                      <li>
+                                        JIT Compiler: compilação em tempo de execução
+                                      </li>
+                                      <li>
+                                        Exercícios: Análise de performance de uma aplicação Java com o JIT
+                                      </li>
+                                      <li>
+                                        Garbage Collector
+                                      </li>
+                                      <li>
+                                        VisualVM, VisualGC e profiling
+                                      </li>
+                                      <li>
+                                        System.gc
+                                      </li>
+                                      <li>
+                                        finalizer
+                                      </li>
+                                      <li>
+                                        Exercícios: Garbage Collector e tuning de memória
+                                      </li>
+                                      <li>
+                                        ClassLoaders
+                                      </li>
+                                      <li>
+                                        Exercícios: Como funcionam os Classloaders e o Classloader Hell
+                                      </li>
+                                    </ul>
+
+                                    <li>
+                                      <strong>Tópicos avançados de Orientação a Objetos e Design</strong>
+                                    </li>
+                                      <ul>
+                                        <li>
+                                          Orientação a objetos
+                                        </li>
+                                        <li>
+                                          Fundamentos de OO: Encapsulamento e interfaces de uso
+                                        </li>
+                                        <li>
+                                          JavaBeans e getters e setters
+                                        </li>
+                                        <li>
+                                          Anemic Domain Model e objetos fantoches
+                                        </li>
+                                        <li>
+                                          Exercícios: Boa prática de orientação à objetos - Encapsulamento
+                                        </li>
+                                        <li>
+                                          Fundamentos de OO: Polimorfismo
+                                        </li>
+                                        <li>
+                                          Herança versus Composição
+                                        </li>
+                                        <li>
+                                          Interface versus Implementação
+                                        </li>
+                                        <li>
+                                          Exercícios: Cuidados com a herança e a composição com alternativa
+                                        </li>
+                                        <li>
+                                          Acoplamento e Coesão
+                                        </li>
+                                        <li>
+                                          Acoplamento sintático e acoplamento semântico
+                                        </li>
+                                        <li>
+                                          Testes de unidade e TDD
+                                        </li>
+                                        <li>
+                                          Testes de integração, Selenium e WebDriver
+                                        </li>
+                                        <li>
+                                          Exercícios: Teste de unidade e o acoplamento semântico
+                                        </li>
+                                        <li>
+                                          Fluent Interface
+                                        </li>
+                                        <li>
+                                          Exercícios: Código mais expressivo e o padrão Builder
+                                        </li>
+                                        <li>
+                                          Domain Specific Languages
+                                        </li>
+                                        <li>
+                                          Domain Driven Design
+                                        </li>
+                                        <li>
+                                          Exercícios opcionais: DSLs em Java e em outras linguagens
+                                        </li>
+                                        <li>
+                                          Para saber mais: Imutabilidade
+                                        </li>
+                                        <li>
+                                          Exercícios opcionais: Imutabilidade e Flyweight
+                                        </li>
+                                      </ul>
+                                      
+                                    <li>
+                                      <strong>Separação de responsabilidades e Inversão de Controle</strong>
+                                    </li>
+                                      <ul>
+                                        <li>
+                                          Gerencie suas dependências através de injeção
+                                        </li>
+                                        <li>
+                                          Considere usar um framework de Injeção de Dependências
+                                        </li>
+                                        <li>
+                                          Spring, PicoContainer e Guice
+                                        </li>
+                                        <li>
+                                          CDI e Java EE 6
+                                        </li>
+                                        <li>
+                                          Fábricas e o mito do baixo acoplamento
+                                        </li>
+                                        <li>
+                                          Exercícios: Separação de responsabilidades, injeçao de dependências e inversão de controle
+                                        </li>
+                                        <li>
+                                          AOP
+                                        </li>
+                                        <li>
+                                          Exercício Opcional: Programação Orientada à Aspectos
+                                        </li>
+                                        <li>
+                                          Javassist e manipulação de bytecodes
+                                        </li>
+                                        <li>
+                                          Exercício Opcional: Manipulação de Bytecode
+                                        </li>
+                                      </ul>
+
+                                    <li>
+                                      <strong>Arquitetura</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          O que é Arquitetura?
+                                        </li>
+                                        <li>
+                                          Requisitos não funcionais
+                                        </li>
+                                        <li>
+                                          Performance
+                                        </li>
+                                        <li>
+                                          Escalabilidade e Disponibilidade
+                                        </li>
+                                        <li>
+                                          Confiabilidade
+                                        </li>
+                                        <li>
+                                          Extensibilidade e manutenabilidade
+                                        </li>
+                                        <li>
+                                          Gerenciabilidade
+                                        </li>
+                                        <li>
+                                          Exercícios: Gerenciabilidade
+                                        </li>
+                                        <li>
+                                          Segurança
+                                        </li>
+                                        <li>
+                                          Exercícios: Evite injeção na Web
+                                        </li>
+                                        <li>
+                                          Cliente Servidor
+                                        </li>
+                                        <li>
+                                          p2p - Peer to Peer
+                                        </li>
+                                        <li>
+                                          Dividindo em camadas: tiers e layers
+                                        </li>
+                                        <li>
+                                          MVC - Model View Controller
+                                        </li>
+                                        <li>
+                                          Arquitetura contemporânea e o Cloud
+                                        </li>
+                                      </ul>
+
+                                    <li>
+                                      <strong>Decisões arquiteturais</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          Desenvolvimento Web MVC: Actions ou Componentes?
+                                        </li>
+                                        <li>
+                                          Domine sua ferramenta de mapeamento objeto relacional
+                                        </li>
+                                        <li>
+                                          Exercícios: Boas e más práticas com o Hibernate
+                                        </li>
+                                        <li>
+                                          Distribuição de objetos
+                                        </li>
+                                        <li>
+                                          RMI
+                                        </li>
+                                        <li>
+                                          EJB
+                                        </li>
+                                        <li>
+                                          Value Object, Data Transfer Object, Session Façade
+                                        </li>
+                                        <li>
+                                          As novidades do Java EE 6
+                                        </li>
+                                        <li>
+                                          Comunicação assíncrona
+                                        </li>
+                                        <li>
+                                          Mensageria e JMS
+                                        </li>
+                                        <li>
+                                          Exercícios: Mensageria assíncrona e o JMS
+                                        </li>
+                                      </ul>
+
+
+                                    <li>
+                                      <strong>Integração de sistemas na Web e REST</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          Princípios de integração de sistemas na Web
+                                        </li>
+                                        <li>
+                                          SOA - Service Oriented Architecture
+                                        </li>
+                                        <li>
+                                          Web Services SOAP e WSDL
+                                        </li>
+                                        <li>
+                                          Exercícios: Consumo de serviços - WebServices SOAP
+                                        </li>
+                                        <li>
+                                          POX: Plain Old XML
+                                        </li>
+                                        <li>
+                                          Exercícios: Consumo de serviços - POX (Plain Old XML)
+                                        </li>
+                                        <li>
+                                          REST: arquitetura distribuída baseada em hipermídia
+                                        </li>
+                                        <li>
+                                          Exercício Opcional: Consumo de serviços - WebServices REST
+                                        </li>
+                                      </ul>
+
+                                     <li>
+                                      <strong>Apêndice - Catálogo de Design Patterns</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          Factory Method
+                                        </li>
+                                        <li>
+                                          Singleton
+                                        </li>
+                                        <li>
+                                          Iterator
+                                        </li>
+                                        <li>
+                                          Observer
+                                        </li>
+                                        <li>
+                                          Visitor
+                                        </li>
+                                        <li>
+                                          Decorator
+                                        </li>
+                                        <li>
+                                          Composite
+                                        </li>
+                                        <li>
+                                          Template Method
+                                        </li>
+                                        <li>
+                                          Builder
+                                        </li>
+                                        <li>
+                                          Prototype
+                                        </li>
+                                        <li>
+                                          Adapter
+                                        </li>
+                                        <li>
+                                          Bridge
+                                        </li>
+                                        <li>
+                                          Façade
+                                        </li>
+                                        <li>
+                                          Proxy
+                                        </li>
+                                        <li>
+                                          Chain of Responsibility
+                                        </li>
+                                        <li>
+                                          Command
+                                        </li>
+                                        <li>
+                                          Interpreter
+                                        </li>
+                                        <li>
+                                          Mediator
+                                        </li>
+                                        <li>
+                                          Memento
+                                        </li>
+                                        <li>
+                                          State
+                                        </li>
+                                        <li>
+                                          Patterns no DDD: Repository, Entity, VO, Service
+                                        </li>
+                                        <li>
+                                          Mau uso de patterns: Singleton versus Injeção de Dependências
+                                        </li>
+
+                                      </ul>
+                                      
+                                  </ul>
+                                
+                              </div>
+                            </div>
+
+
+                            <div class="item-event">
+                              <span class="date">2014</span>
+                              <div class="event-content">
+                                <h4>Java Enterprise Applications</h4>
+                                <h5><a href="http://www.infnet.edu.br/infnet/" target="_blank">Instituto Infnet</a></h5>
+                                
+                                  Carga horária: <strong>40 horas</strong>.
+                                  <br />
+                                  Objetivo: Desenvolva sistemas Web com Servlets, JSP, Spring MVC e Hibernate.
+                                  <br /><br />
+                                  Conteúdo do Curso:
+                                  <ul>
+                                    <li>
+                                      <strong>Fundamentos da Java EE</strong>
+                                    </li>
+                                    <ul>
+                                      <li>
+                                        Java EE
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          Visão Geral da Tecnologia Java
+                                        </li>
+                                        <li>
+                                          Java SE
+                                        </li>
+                                        <li>
+                                          Java ME
+                                        </li>
+                                        <li>
+                                          Java EE
+                                        </li>
+                                      </ul>
+
+                                      <li>
+                                        Sistemas Corporativos
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          Requisitos Não-Funcionais
+                                        </li>
+                                        <li>
+                                          Modelo de Referência de Arquitetura
+                                        </li>
+                                        <li>
+                                          Web Services
+                                        </li>
+                                      </ul> 
+                                    </ul>
+
+                                    <li>
+                                      <strong>Tecnologia para Sistemas Distribuídos</strong>
+                                    </li>
+                                    <ul>
+                                      <li>
+                                        RMI
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          RPC
+                                        </li>
+                                        <li>
+                                          RMI
+                                        </li>
+                                        <li>
+                                          Ciclo de Vida RMI
+                                        </li>
+                                         <li>
+                                          Interfaces para Objetos Remotos
+                                        </li>
+                                         <li>
+                                          Proxy
+                                        </li>
+                                         <li>
+                                          Interfaces Remotas e Locais
+                                        </li>
+                                      </ul>
+
+                                      <li>
+                                        Fábricas de Objetos
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          Design Patterns de Criação
+                                        </li>
+                                        <li>
+                                          Fábrica de Objetos
+                                        </li>
+                                        <li>
+                                          Implementação
+                                        </li>
+                                      </ul>
+
+                                      <li>
+                                        JNDI
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          Introdução
+                                        </li>
+                                        <li>
+                                          Arquitetura
+                                        </li>
+                                        <li>
+                                          API
+                                        </li>
+                                      </ul>
+                                    </ul>
+
+                                    <li>
+                                      <strong>Enterprise Beans</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          Arquitetura
+                                        </li>
+                                        <ul>
+                                          <li>
+                                            Enterprise Beans
+                                          </li>
+                                          <li>
+                                            Arquitetura de uma Aplicação
+                                          </li>
+                                          <li>
+                                            Containeres Java EE
+                                          </li>
+                                          <li>
+                                            Arquivos de uma Aplicação
+                                          </li>
+                                        </ul>
+
+                                        <li>
+                                          Clientes
+                                        </li>
+                                        <ul>
+                                          <li>
+                                            Clientes Remotos
+                                          </li>
+                                          <li>
+                                            Clientes Locais
+                                          </li>
+                                          <li>
+                                            Selecionando o Tipo de Interface
+                                          </li>
+                                        </ul>
+
+
+                                        <li>
+                                          Tipos EJB
+                                        </li>
+                                        <ul>
+                                          <li>
+                                            Tipos de EJB
+                                          </li>
+                                          <li>
+                                            EJB 2.1 vs. EJB 3
+                                          </li>
+                                          <li>
+                                            Stateful Session Beans
+                                          </li>
+                                          <li>
+                                            Stateless Session Beans
+                                          </li>
+                                          <li>
+                                            Message-Driven Beans
+                                          </li>
+                                        </ul>
+
+
+                                        <li>
+                                          Implementação de EJB
+                                        </li>
+                                        <ul>
+                                          <li>
+                                            Injection
+                                          </li>
+                                          <li>
+                                            Stateless Session Beans
+                                          </li>
+                                          <li>
+                                            Stateful Session Beans
+                                          </li>
+                                          <li>
+                                            Message-Driven Beans
+                                          </li>
+                                        </ul>
+                                      </ul>
+
+                                    <li>
+                                      <strong>Persistência com JPA</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          Entities
+                                        </li>
+                                        <ul>
+                                          <li>
+                                            O que são Entities?
+                                          </li>
+                                          <li>
+                                            Campos
+                                          </li>
+                                          <li>
+                                            Chaves
+                                          </li>
+                                          <li>
+                                            Relacionamentos
+                                          </li>
+                                        </ul>
+
+                                        <li>
+                                          Persistência
+                                        </li>
+                                        <ul>
+                                          <li>
+                                            Entity Manager
+                                          </li>
+                                          <li>
+                                            Persistence Unit
+                                          </li>
+                                          <li>
+                                            Operações
+                                          </li>
+                                          <li>
+                                            Fetch
+                                          </li>
+                                        </ul>
+
+                                        <li>
+                                          Herança
+                                        </li>
+                                        <ul>
+                                          <li>
+                                            Hierarquia de Classes
+                                          </li>
+                                          <li>
+                                            Exemplos
+                                          </li>
+                                        </ul>
+
+                                      </ul>
+
+                                    <li>
+                                      <strong>Web Services</strong>
+                                    </li>
+                                      <ul>
+                                        <li>
+                                          O Que São Web Services?
+                                        </li>
+                                        <ul>
+                                          <li>
+                                            Introdução
+                                          </li>
+                                          <li>
+                                            Tipos de Aplicações
+                                          </li>
+                                          <li>
+                                            XML e Web Services
+                                          </li>
+                                          <li>
+                                            Protocolos dos Web Services
+                                          </li>
+                                        </ul>
+                                        <li>
+                                          Implementando Web Services
+                                        </li>
+                                      </ul>
+
+                                    <li>
+                                      <strong>Spring</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          Fundamentos e Arquitetura
+                                        </li>
+                                        <ul>
+                                          <li>
+                                            Fundamentos
+                                          </li>
+                                          <li>
+                                            Arquitetura
+                                          </li>
+                                          <li>
+                                            IoC – Inversion of Control
+                                          </li>
+                                          <li>
+                                            Dependency Injection
+                                          </li>
+                                          <li>
+                                            Spring X EJB
+                                          </li>
+                                        </ul>
+
+
+                                        <li>
+                                          Construção de Aplicações
+                                        </li>
+                                        <ul>
+                                          <li>
+                                            BeanFactory
+                                          </li>
+                                          <li>
+                                            Arquivo de Configurações
+                                          </li>
+                                          <li>
+                                            Auto Wiring
+                                          </li>
+                                        </ul>
+
+
+                                        <li>
+                                          Programação Orientada a Aspectos
+                                        </li>
+                                        <ul>
+                                          <li>
+                                            Introdução
+                                          </li>
+                                          <li>
+                                            Glossário
+                                          </li>
+                                          <li>
+                                            Exemplo de Implementação
+                                          </li>
+                                        </ul>
+
+
+                                        <li>
+                                          Integração com JPA
+                                        </li>
+                                        <ul>
+                                          <li>
+                                            Configurações para JPA
+                                          </li>
+                                          <li>
+                                            Exemplo de Implementação
+                                          </li>
+                                        </ul>
+                                      </ul>
+
+                                  </ul>
+                                  
+                                
+                              </div>
+                            </div>
+
+
+                             <div class="item-event">
+                              <span class="date">2014</span>
+                              <div class="event-content">
+                                <h4>Java Web Applications</h4>
+                                <h5><a href="http://www.infnet.edu.br/infnet/" target="_blank">Instituto Infnet</a></h5>
+                                
+                                  Carga horária: <strong>40 horas</strong>.
+                                  <br />
+                                  Objetivo: Desenvolva sistemas Web com Servlets, JSP, Spring MVC e Hibernate.
+                                  <br /><br />
+                                  Conteúdo do Curso:
+                                  <ul>
+                                    <li>
+                                      <strong>Aplicações Web</strong>
+                                    </li>
+                                    <ul>
+                                      <li>
+                                        Introdução à JEE
+                                      </li>
+                                      <li>
+                                        HTML e CSS
+                                      </li>
+                                    </ul>
+
+                                    <li>
+                                      <strong>Servlets</strong>
+                                    </li>
+                                    <ul>
+                                      <li>
+                                        Fundamentos
+                                      </li>
+                                      <li>
+                                        Requisição
+                                      </li>
+                                      <li>
+                                        Resposta
+                                      </li>
+                                      <li>
+                                        Parâmetros de Requisição
+                                      </li>
+                                    </ul>
+
+                                    <li>
+                                      <strong>MVC em Aplicações Web</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          Introdução ao MVC
+                                        </li>
+                                        <li>
+                                          JavaBeans
+                                        </li>
+                                        <li>
+                                          Servlet Controlador
+                                        </li>
+                                      </ul>
+
+                                    <li>
+                                      <strong>JavaServer Pages</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          Elementos Principais
+                                        </li>
+                                        <li>
+                                          Integração com Java Beans
+                                        </li>
+                                        <li>
+                                          Expression Language
+                                        </li>
+                                        <li>
+                                          JSTL
+                                        </li>
+                                      </ul>
+
+                                    <li>
+                                      <strong>Gerenciamento de Estado</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          Gerenciamento de Sessão
+                                        </li>
+                                      </ul>
+
+                                    <li>
+                                      <strong>Spring MVC</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          Frameworks
+                                        </li>
+                                        <li>
+                                          Funcionamento do SPRING MVC
+                                        </li>
+                                        <li>
+                                          Classes do SPRING MVC
+                                        </li>
+                                        <li>
+                                          SPRING MVC Validator
+                                        </li>
+                                      </ul>
+
+                                    <li>
+                                      <strong>JPA</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          Conceitos sobre persistência de objetos
+                                        </li>
+                                        <li>
+                                          Java Persistence API
+                                        </li>
+                                        <li>
+                                          Criação de classes com JPA
+                                        </li>
+                                      </ul>
+
+                                  </ul>
+                                
+                              </div>
+                            </div>
+
+
+                            <div class="item-event">
+                              <span class="date">2014</span>
+                              <div class="event-content">
+                                <h4>Java Programming</h4>
+                                <h5><a href="http://www.infnet.edu.br/infnet/" target="_blank">Instituto Infnet</a></h5>
+                                
+                                  Carga horária: <strong>40 horas</strong>.
+                                  <br />
+                                  Objetivo: O curso objetiva formar desenvolvedores na utilização da plataforma Java.
+                                  <br /><br />
+                                  Conteúdo do Curso:
+                                  <ul>
+
+                                    <li>
+                                      <strong>Fundamentos</strong>
+                                    </li>
+                                    <ul>
+                                      <li>
+                                        Introdução à Linguagem Java
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          Visão Geral
+                                        </li>
+                                        <li>
+                                          Edições de Java
+                                        </li>
+                                        <li>
+                                          Máquina Virtual Java
+                                        </li>
+                                        <li>
+                                          Compilação e Execução
+                                        </li>
+                                        <li>
+                                          Primeiro Programa
+                                        </li>
+                                        <li>
+                                          Biblioteca de Classes
+                                        </li>
+                                        <li>
+                                          Documentação
+                                        </li>
+                                        <li>
+                                          Pacotes
+                                        </li>
+                                        <li>
+                                          A Instrução import.
+                                        </li>
+                                      </ul>
+
+                                      <li>
+                                        Variáveis e Tipos de Dados
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          Literais
+                                        </li>
+                                        <li>
+                                          Identificadores
+                                        </li>
+                                        <li>
+                                          Tipos Primitivos
+                                        </li>
+                                        <li>
+                                          Variáveis
+                                        </li>
+                                        <li>
+                                          Type Cast
+                                        </li>
+                                        <li>
+                                          Atributos
+                                        </li>
+                                      </ul>
+
+                                      <li>
+                                        Métodos
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          Estrutura de um Método
+                                        </li>
+                                        <li>
+                                          Escopo de Variáveis
+                                        </li>
+                                        <li>
+                                          Visibilidade
+                                        </li>
+                                      </ul>
+
+                                      <li>
+                                        Operadores e Controle de Fluxo
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          Operadores
+                                        </li>
+                                        <li>
+                                          Estruturas de Controle de Fluxo
+                                        </li>
+                                      </ul>
+
+                                      <li>
+                                        Arrays
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          Arrays
+                                        </li>
+                                        <li>
+                                          Declaração
+                                        </li>
+                                        <li>
+                                          Criação
+                                        </li>
+                                        <li>
+                                          Inicialização
+                                        </li>
+                                      </ul>
+                                    </ul>
+
+                                    <li>
+                                      <strong>Orientação a Objetos</strong>
+                                    </li>
+                                    <ul>
+                                      <li>
+                                        Fundamentos
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          Classes
+                                        </li>
+                                        <li>
+                                          Objetos
+                                        </li>
+                                        <li>
+                                          Encapsulamento
+                                        </li>
+                                        <li>
+                                          Propriedades
+                                        </li>
+                                        <li>
+                                          Métodos
+                                        </li>
+                                        <li>
+                                          Sobrecarga de Métodos
+                                        </li>
+                                        <li>
+                                          Construtores
+                                        </li>
+                                        <li>
+                                          Referência this
+                                        </li>
+                                      </ul>
+
+                                      <li>
+                                        Herança
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          Classe Object
+                                        </li>
+                                        <li>
+                                          Herança
+                                        </li>
+                                        <li>
+                                          Referência super
+                                        </li>
+                                        <li>
+                                          Anotações
+                                        </li>
+                                        <li>
+                                          Sobrescrita de métodos
+                                        </li>
+                                      </ul>
+
+                                      <li>
+                                        Conceitos Avançado
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          Polimorfismo
+                                        </li>
+                                        <li>
+                                          Operador instanceof
+                                        </li>
+                                        <li>
+                                          Modificador final
+                                        </li>
+                                        <li>
+                                          Classes Abstratas
+                                        </li>
+                                        <li>
+                                          Interfaces
+                                        </li>
+                                      </ul>
+
+                                    </ul>
+                                    
+                                    <li>
+                                      <strong>Tratamento de Erros</strong>
+                                    </li>
+                                    <ul>
+
+                                      <li>
+                                        Exceções
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          O que é Exceção
+                                        </li>
+                                        <li>
+                                          Hierarquia de Exceções
+                                        </li>
+                                        <li>
+                                          Instruções de Tratamento de Erros
+                                        </li>
+                                        <li>
+                                          Lançamento de Exceções
+                                        </li>
+                                        <li>
+                                          Criação de Exceções
+                                        </li>
+                                      </ul>
+
+                                    </ul>
+
+
+                                    <li>
+                                      <strong>Classes Úteis</strong>
+                                    </li>
+                                    <ul>
+                                    
+                                      <li>
+                                        Manipulação de Strings
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          String
+                                        </li>
+                                        <li>
+                                          StringBuffer
+                                        </li>
+                                        <li>
+                                          Números e Wrappers
+                                        </li>
+                                        <li>
+                                          Classe Math
+                                        </li>
+                                        <li>
+                                          Wrappers
+                                        </li>
+                                      </ul>
+
+                                      <li>
+                                        Internacionalização
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          Formatação de Números
+                                        </li>
+                                        <li>
+                                          Date
+                                        </li>
+                                        <li>
+                                          Calendar
+                                        </li>
+                                        <li>
+                                          Formatação de Datas
+                                        </li>
+                                        <li>
+                                          Locale
+                                        </li>
+                                      </ul>
+
+                                      <li>
+                                        Processamento de Arquivos
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          IO API
+                                        </li>
+                                        <li>
+                                          Classes Abstratas
+                                        </li>
+                                        <li>
+                                          Classes de Arquivos
+                                        </li>
+                                        <li>
+                                          Classes Especializadas
+                                        </li>
+                                      </ul>
+
+                                    </ul>
+
+                                    <li>
+                                      <strong>Estruturas de Dados</strong>
+                                    </li>
+                                    <ul>
+
+                                      <li>
+                                        Coleções
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          Framework de Coleções
+                                        </li>
+                                        <li>
+                                          Interfaces
+                                        </li>
+                                        <li>
+                                          Classes
+                                        </li>
+                                        <li>
+                                          Generics
+                                        </li>
+                                        <li>
+                                          For Each
+                                        </li>
+                                      </ul>
+
+                                      <li>
+                                        Persistência em Bancos de Dados
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          O que é JDBC
+                                        </li>
+                                        <li>
+                                          Conexão com BD
+                                        </li>
+                                        <li>
+                                          SQL Exception
+                                        </li>
+                                        <li>
+                                          Interface Statement
+                                        </li>
+                                        <li>
+                                          Interface PreparedStatement
+                                        </li>
+                                        <li>
+                                          Interface ResultSet
+                                        </li>
+                                        <li>
+                                          Fechando as Conexões
+                                        </li>
+                                      </ul>
+
+                                    </ul>
+
+                                  </ul>
+                                
+                              </div>
+                            </div>
+
+                            <div class="item-event">
+                              <span class="date">2014</span>
+                              <div class="event-content">
+                                <h4>Projeto de Sistemas e Orientação a Objetos com UML</h4>
+                                <h5><a href="http://www.infnet.edu.br/infnet/" target="_blank">Instituto Infnet</a></h5>
+                                
+                                  Carga horária: <strong>24 horas</strong>.
+                                  <br />
+                                  Objetivo: Aprenda a projetar sistemas orientados a objetos utilizando UML, Design Patterns e Ferramentas Case.
+                                  <br /><br />
+                                  Conteúdo do Curso:
+                                  <ul>
+                                    <li>
+                                      <strong>Fundamentos</strong>
+                                    </li>
+                                    <ul>
+                                      <li>
+                                        Engenharia de Software
+                                      </li>
+                                      <li>
+                                        Modelagem de Sistemas
+                                      </li>
+                                      <li>
+                                        Visão Geral da UML
+                                      </li>
+                                      <li>
+                                        Conceitos de Orientação a Objetos
+                                      </li>
+                                    </ul>
+
+                                    <li>
+                                      <strong>Levantamento de Requisitos</strong>
+                                    </li>
+                                    <ul>
+                                      <li>
+                                        Conceitos
+                                      </li>
+                                      <li>
+                                        Técnicas de Levantamento
+                                      </li>
+                                    </ul>
+
+                                    <li>
+                                      <strong>Diagrama de Casos de Uso</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          Conceitos e Componentes
+                                        </li>
+                                        <li>
+                                          Desenho do Diagrama
+                                        </li>
+                                      </ul>
+
+                                    <li>
+                                      <strong>Diagrama de Classes</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          Conceitos
+                                        </li>
+                                        <li>
+                                          Relacionamentos
+                                        </li>
+                                        <li>
+                                          Mapeamento de Classes para Banco de Dados Relacional
+                                        </li>
+                                      </ul>
+
+                                    <li>
+                                      <strong>Apêndice 1 - Diagrama de Sequência</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          Diagramas de Sequência
+                                        </li>
+                                        <li>
+                                          Componentes
+                                        </li>
+                                        <li>
+                                          Criação e Destruição de Objetos
+                                        </li>
+                                        <li>
+                                          Partindo de um Caso de Uso
+                                        </li>
+                                        <li>
+                                          Condição de Guarda
+                                        </li>
+                                        <li>
+                                          Iteração
+                                        </li>
+                                        <li>
+                                          Anotações
+                                        </li>
+                                      </ul>
+
+                                    <li>
+                                      <strong>Apêndice 2 - Diagrama de Estados</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          O que é Diagrama de Estados?
+                                        </li>
+                                        <li>
+                                          Componentes
+                                        </li>
+                                        <li>
+                                          Quando Usar o Diagrama de Estados?
+                                        </li>
+                                        <li>
+                                          Construção
+                                        </li>
+                                      </ul>
+
+                                    <li>
+                                      <strong>Apêndice 3 - Diagrama de Atividades</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          O que é Diagrama de Atividades?
+                                        </li>
+                                        <li>
+                                          Componentes
+                                        </li>
+                                        <li>
+                                          Uso do Diagrama de Atividades
+                                        </li>
+                                      </ul>
+
+                                  </ul>
+                                
+                              </div>
+                            </div>
+
+                            <div class="item-event">
+                              <span class="date">2011</span>
+                              <div class="event-content">
+                                <h4>Universidade do Banco de Dados</h4>
+                                <h5><a href="http://www.cotiinformatica.com.br/" target="_blank">COTI</a></h5>
+                                
+                                  Carga horária: <strong>32 horas</strong>.
+                                  <br />
+                                  Objetivo: Curso voltado para alunos que desejam iniciar carreira em banco de dados e futuramente como DBA. Este curso solidifica o conhecimento de base em modelagem de dados, normalização e manipulação de banco de dados.
+                                  <br />
+                                  Conteúdo do Curso:
+                                  <ul>
+                                    <li>
+                                      <strong>MySQL</strong>
+                                    </li>
+                                    <ul>
+                                      <li>
+                                        Modelagem e normalização de bancos de dados
+                                      </li>
+                                      <li>
+                                        Operações básicas
+                                      </li>
+                                      <li>
+                                        Views
+                                      </li>
+                                      <li>
+                                        Criptografia de dados
+                                      </li>
+                                      <li>
+                                        Triggers
+                                      </li>
+                                      <li>
+                                        Stored Procedures e funções
+                                      </li>
+                                      <li>
+                                        Transações
+                                      </li>
+                                      <li>
+                                        Criação de Usuários e definição de privilégios
+                                      </li>
+                                    </ul>
+                                    <li>
+                                      <strong>PostGre</strong>
+                                    </li>
+                                    <ul>
+                                      <li>
+                                        Criação da base de dados
+                                      </li>
+                                      <li>
+                                        Schemas
+                                      </li>
+                                      <li>
+                                        Operações padrão do Postgre
+                                      </li>
+                                      <li>
+                                        Variáveis e funções do Postgre
+                                      </li>
+                                      <li>
+                                        Modelagem de dados
+                                      </li>
+                                      <li>
+                                        Views
+                                      </li>
+                                      <li>
+                                        Vetores
+                                      </li>
+                                      <li>
+                                        Transações
+                                      </li>
+                                    </ul>
+                                    <li>
+                                      <strong>Linguagem PLPGSQL</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          Functions
+                                        </li>
+                                      </ul>
+                                      
+                                    <li>
+                                      <strong>Procedures</strong>
+                                     </li>
+                                      <ul>
+                                        <li>
+                                          Triggers baseadas em Procedures
+                                        </li>
+                                        <li>
+                                          Criação de Usuários
+                                        </li>
+                                        <li>
+                                          Criptografia de dados
+                                        </li>
+                                        <li> 
+                                          Exportação de dados
+                                        </li>
+                                      </ul>
+                                  </ul>
+                                
+                              </div>
+                            </div>
+
+                            <div class="item-event">
+                              <span class="date">2009</span>
+                              <div class="event-content">
+                                <h4>Web Design</h4>
+                                <h5><a href="http://www.microcamp.com.br/" target="_blank">Microcamp</a></h5>
+                                
+                                  Meu primeiro contato com tecnologia.
+                                  <br />
+                                  Nesse curso aprendi o básico de front-end (HTML, CSS, JAVASCRIPT) e aprendi também a usar softwares como <strong>Photoshop</strong> e <strong>Corel</strong>.
+                                  <br />
+                                  Foram no total 2 anos de curso.
+                                
+                              </div>
+                            </div>
+                            <div class="item-event last">
+                              <span class="date">2005</span>
+                              <div class="event-content">
+                                <h4>Curso de Inglês</h4>
+                                <h5><a href="http://www.ccaa.com.br/" target="_blank">CCAA</a></h5>
+                                
+                                  Foram no total 5 anos de curso passando por todos os módulos, desde a alfabetização até o avançado.
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- =========
+                        End Time line section
+                        ===================================-->
+
+                      </div>
+                      <div class="col-md-4">
+                        <h3 class="title with-icon"><span class="fa fa-code icn-title"></span> Constante Evolução</h3>
+                        <div class="box-block">
+
+                          <!-- =========
+                          STart your Skills Progress bars section
+                          ===================================-->
+                          <ul class="list-unstyled list-skills">
+                            <li>
+                              <span class="caption-skill">Java</span>
+                              <div class="progress">
+                                <div class="progress-bar" style="width: 95%;">
+                                  <span>95% </span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">HTML5</span>
+                              <div class="progress">
+                                <div class="progress-bar" style="width: 80%;">
+                                  <span>80% </span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">JQuery</span>
+                              <div class="progress">
+                                <div class="progress-bar" style="width: 85%;">
+                                  <span>85% </span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">CSS3</span>
+                              <div class="progress">
+                                <div class="progress-bar" style="width: 60%;">
+                                  <span>60% </span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">NodeJS</span>
+                              <div class="progress">
+                                <div class="progress-bar" style="width: 30%;">
+                                  <span>30% </span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">AngularJS</span>
+                              <div class="progress">
+                                <div class="progress-bar" style="width: 50%;">
+                                  <span>50% </span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">IONIC</span>
+                              <div class="progress">
+                                <div class="progress-bar" style="width: 30%;">
+                                  <span>30% </span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">MYSQL</span>
+                              <div class="progress">
+                                <div class="progress-bar"  style="width: 85%;">
+                                  <span>85% </span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">SQL Server</span>
+                              <div class="progress">
+                                <div class="progress-bar"  style="width: 90%;">
+                                  <span>90% </span>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <span class="caption-skill">Postgre</span>
+                              <div class="progress">
+                                <div class="progress-bar"  style="width: 70%;">
+                                  <span>70% </span>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                          <!-- =========
+                          End your Skills Progress bars section
+                          ===================================-->
+
+                        </div>
+                        <div class="deviter"></div>
+                        <h3 class="title with-icon"><span class="fa fa-pencil icn-title"></span> Design</h3>
+                        <div class="box-block">
+
+                          <!-- =========
+                          STart your Skills Progress point bars section
+                          ===================================-->
+                          <ul class="list-unstyled list-points-progress">
+                            <li>
+                              <span class="caption-skill">Photoshop</span>
+                              <div class="pogress-point">
+                                <span class="point-indicator">90%</span>
+                                <div class="progress-bar-point" style="width: 90%;"></div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">CorelDraw</span>
+                              <div class="pogress-point">
+                                <span class="point-indicator">50%</span>
+                                <div class="progress-bar-point" style="width: 50%;"></div>
+                              </div>
+                            </li>
+                          </ul>
+                          <!-- =========
+                          STart your Skills Progress point bars section
+                          ===================================-->
+
+
+                        </div>
+                        <div class="deviter"></div>
+                        <h3 class="title with-icon"><span class="fa fa-globe icn-title"></span> Linguas</h3>
+                        <div class="box-block">
+                          <ul class="list-unstyled list-strip">
+                            <li><i class="fa fa-check"></i> Português (Nativo)</li>
+                            <li><i class="fa fa-check"></i> Inglês (Avançado)</li>
+                          </ul>
+                        </div>
+                        <div class="deviter"></div>
+                        <h3 class="title with-icon"><span class="fa fa-file icn-title"></span> Download CV</h3>
+                        <div class="box-block">
+                          <p>Caso seja de seu interesse</p>
+                          <a href="#" class="btn btn-flat btn-block"><i class="fa fa-download"></i> Download</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <!-- =========
+                End resume tab content section
+                ===================================-->
+
+                <!-- =========
+                Start portfolio tab content section
+                ===================================-->
+                <div id='portfolio' class="tab-pane fade">
+                  <div class="body-content">
+                    <h3 class="title with-icon"><span class="fa fa-briefcase icn-title"></span> Orgulho é a palavra</h3>
+
+                    <!-- =========
+                    Start list control postfolio section
+                    ===================================-->
+                    <div class="text-center">
+                      <ul class="control-profolio list-inline">
+                        <li class="filter active" data-filter="all">Todos</li>
+                        <li class="filter" data-filter="projetos">Projetos</li>
+                        <li class="filter" data-filter="websiteapp">Websites</li>
+                        <li class="filter" data-filter="mobileapp">Aplicativos</li>
+                      </ul>
+                    </div>
+                    <!-- =========
+                    End list control postfolio section
+                    ===================================-->
+
+                    <!-- =========
+                    Start grid postfolio section
+                    ===================================-->
+                    <ul id='portfolio-grid' class="list-unstyled grid-portfolio">
+                      
+                      <li th:class="${'mix ' + port.filtro}" th:each="port : ${portfolios}">
+                        <div class="item-portfolio">
+                          <a th:href="${port.link}" target="_blank" class="preview-portfolio imgWrapper">
+                            <div class="mask">
+                            	<div class="icn-center">
+                            		<i th:class="${'fa ' + port.icone}" aria-hidden="true"></i>
+                            	</div>
+                            </div>
+                            <img th:src="${port.foto}" alt="" class="img-responsive" />
+                          </a>
+                          <div class="desc-portfolio"><h5 th:text="${port.nome}"><small th:text="${port.tipo}"></small></h5></div>
+                        </div>
+                      </li>
+                      
+                      <li class="mix projetos">
+                        <div class="item-portfolio">
+                          <a href="http://prefeitura.rio/web/riomaisfacilnegocios" target="_blank" class="preview-portfolio imgWrapper">
+                            <div class="mask">
+                            	<div class="icn-center">
+                            		<i class="fa fa-link"></i>
+                            	</div>
+                            </div>
+                            <img src="assets/images/portfolio/negocio.png" alt="" class="img-responsive" />
+                          </a>
+                          <div class="desc-portfolio"><h5>RIO MAIS FÁCIL NEGÓCIOS <small>Projeto</small></h5></div>
+                        </div>
+                      </li>
+                      
+                      <li class="mix projetos">
+                        <div class="item-portfolio">
+                          <a href="http://www.rio.rj.gov.br/web/riomaisfacileventos" target="_blank" class="preview-portfolio imgWrapper">
+                            <div class="mask"><div class="icn-center"><i class="fa fa-link "></i></div></div>
+                            <img src="assets/images/portfolio/evento.png" alt="" class="img-responsive"/>
+                          </a>
+                          <div class="desc-portfolio"><h5>RIO MAIS FÁCIL EVENTOS <small>Projeto</small></h5></div>
+                        </div>
+                      </li>
+                       <li class="mix projetos">
+                        <div class="item-portfolio">
+                          <a href="https://www.neomind.com.br/fusion/portal_neomind/main.jsp?pagecode=casospgm" target="_blank" class="preview-portfolio imgWrapper">
+                            <div class="mask"><div class="icn-center"><i class="fa fa-link "></i></div></div>
+                            <img src="assets/images/portfolio/pgm.png" alt="" class="img-responsive"/>
+                          </a>
+                          <div class="desc-portfolio"><h5>PGM RJ <small>Projeto</small></h5></div>
+                        </div>
+                      </li>
+                      <li class="mix projetos websiteapp mobileapp">
+                        <div class="item-portfolio">
+                          <a href="http://www.melhormeta.com/SistemaAEP/" target="_blank" class="preview-portfolio imgWrapper">
+                            <div class="mask"><div class="icn-center"><i class="fa fa-link "></i></div></div>
+                            <img src="assets/images/portfolio/aep.png" alt="" class="img-responsive"/>
+                          </a>
+                          <div class="desc-portfolio"><h5>AEP RESTAURANTE <small>Projeto e App Mobile e Website</small></h5></div>
+                        </div>
+                      </li>
+                       <li class="mix websiteapp">
+                        <div class="item-portfolio">
+                          <a href="http://melhormeta.com.br/" target="_blank" class="preview-portfolio imgWrapper">
+                            <div class="mask"><div class="icn-center"><i class="fa fa-link "></i></div></div>
+                            <img src="assets/images/portfolio/mm.png" alt="" class="img-responsive"/>
+                          </a>
+                          <div class="desc-portfolio"><h5>MELHOR META <small>Website</small></h5></div>
+                        </div>
+                      </li>
+                      <li class="mix projetos websiteapp mobileapp">
+                        <div class="item-portfolio">
+                          <a href="https://github.com/juliosilveira77" target="_blank" class="preview-portfolio imgWrapper">
+                            <div class="mask"><div class="icn-center"><i class="fa fa-github "></i></div></div>
+                            <img src="assets/images/portfolio/github.png" alt="" class="img-responsive"/>
+                          </a>
+                          <div class="desc-portfolio"><h5>MAIS PROJETOS <small>Projeto e App Mobile e Website</small></h5></div>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- =========
+                    End grid postfolio section
+                    ===================================-->
+
+
+                  </div>
+                </div>
+                <!-- =========
+                End portfolio tab content section
+                ===================================-->
+                
+                
+                
+                
+                
+                
+                <!-- =========
+                Start portfolio tab content section
+                ===================================-->
+                <div id='depoimento' class="tab-pane fade">
+                  <div class="body-content">
+                    <h3 class="title with-icon"><span class="fa fa-star-o icn-title"></span> Depoimentos</h3>
+                    
+                    	<div class="box-block box-comments">
+                    		<div class="media">
+                    			<div th:each="depo : ${depoimentos}">
+                    				<a class="pull-left" href="#"> 
+                    					<img class="media-object img-circle" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" th:src="${depo.foto}" />
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">
+											<span th:text="${depo.remetente}"></span>
+										</h4>
+										<h6 class="media-heading">
+											<span th:text="${depo.cargo}"></span>
+										</h6>
+										<p>
+											<span class="fa fa-quote-left icn-title"></span>
+											<i>
+												<span th:text="${depo.mensagem}"></span>
+											</i> 
+											<span class="fa fa-quote-right icn-title"></span>
+										</p>
+									</div>
+									<hr />
+                    			</div>
+                    		</div>
+                    	</div>
+                    
+                    	<h3 class="title with-icon"><span class="fa fa-star-o icn-title"></span> Já trabalhou comigo? Será uma honra ter um depoimento seu!</h3>
+						<form action="#" th:action="@{/salvarDepoimento}" th:object="${novoDepoimento}" method="post" enctype="multipart/form-data">
+							
+							<div class="row">
+		                        <div class="col-md-6">
+		                          <div class="form-group">
+		                            <label for="remetente">Nome</label>
+		                            <input type="text" th:field="*{remetente}" class="form-control" name="remetente" id="remetente"  placeholder="Nome" required="required" />
+		                          </div>
+		                        </div>
+		                        
+		                        <div class="col-md-6">
+		                          <div class="form-group">
+		                            <label for="empresa">Empresa</label>
+		                            <input type="text" th:field="*{empresa}" class="form-control" name="empresa" id="empresa" placeholder="Empresa" required="required" />
+		                          </div>
+		                        </div>
+		                      </div>
+		                      
+		                      <div class="row">
+		                        <div class="col-md-6">
+		                          <div class="form-group">
+		                            <label for="cargo">Cargo</label>
+		                            <input type="text" th:field="*{cargo}" class="form-control" name="cargo" id="cargo"  placeholder="Cargo" required="required" />
+		                          </div>
+		                        </div>
+		                        
+		                        <div class="col-md-6">
+		                          <div class="form-group">
+		                            <label for="projeto">Projeto</label>
+		                            <input type="text" th:field="*{projeto}" class="form-control" name="projeto" id="projeto" placeholder="Projeto" />
+		                          </div>
+		                        </div>
+		                      </div>
+		                      
+		                      <div class="row">
+		                        <div class="col-md-6">
+		                          <div class="form-group">
+		                            <label for="email">Email</label>
+		                            <input type="email" th:field="*{email}" class="form-control" name="email" id="email" placeholder="Email" required="required" />
+		                          </div>
+		                        </div>
+		                        
+		                        <div class="col-md-6">
+		                          <div class="form-group">
+		                            <label for="celular">Celular</label>
+		                            <input type="text" th:field="*{celular}" class="form-control" name="celular" id="celular" placeholder="Celular" />
+		                          </div>
+		                        </div>
+		                        
+		                      </div>
+		                      
+		                      <div class="row">
+		                      
+		                        <div class="col-md-6">
+		                          <div class="form-group">
+		                            <label for="site">Site</label>
+		                            <input type="text" th:field="*{site}" class="form-control" name="site" id="site" placeholder="Site" />
+		                          </div>
+		                        </div>
+		                        
+		                        <div class="col-md-6">
+		                          <div class="form-group">
+		                            <label for="file">Foto</label>
+		                            <input type="file" name="file" id="file" class="form-control" />
+		                          </div>
+		                        </div>
+		                        
+		                      </div>
+		                      
+		                      <div class="row">
+		                      	<div class="col-md-12">
+			                      <div class="form-group">
+			                        <label for="mensagem">Mensagem</label>
+			                        <textarea class="form-control" th:field="*{mensagem}" rows="8" name="mensagem" id="mensagem" placeholder="Em que posso te ajudar?" required="required" ></textarea>
+			                      </div>
+			                     </div>
+		                      </div>
+		
+		                      <button type="submit" class="btn btn-flat btn-lg"><span class="glyphicon glyphicon-send"></span> Enviar</button>
+							
+						</form>
+					
+                  </div>
+                </div>
+                <!-- =========
+                End portfolio tab content section
+                ===================================-->
+                
+                
+                
+                
+                
+
+
+                <!-- =========
+                Start Blog tab content section
+                ===================================-->
+                <div id='blog' class="tab-pane fade">
+                  <div class="body-content">
+                    <h2 class="title with-icon"><span class="fa  fa-comment-o icn-title"></span> Quem divide, multiplica!</h2>
+
+                    <div class="row">
+                      <div class="col-md-10 col-md-offset-1">
+
+                        <!-- =========
+                        STart blog post section
+                        ===================================-->
+                        <div class="blog-posts">
+                          
+                          <div class="blog-post">
+                            <div class="row">
+                              <div class="col-md-8">
+                                <h3 class="title-post"><a href="blog_ecm.html"><i class="fa fa-users"></i> O QUE É ECM?</a></h3>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="blog-date">
+                                  3 DE NOVEMBRO DE 2016
+                                </div>
+                              </div>
+                            </div>
+                            <div class="body-post">
+                              <div class="imgWrapper">
+                                <img src="assets/images/blog/blog1.png" class="img-full blog-img" alt=""/>
+                              </div>
+                              <p>Escrito por: <strong>Júlio Silveira</strong></p>
+                              <p>
+                                Muitas pessoas buscam em sites e não entendem as vantagens de um ECM. Podemos definir ECM como um grupo de tecnologias que facilitam o armazenamento, a busca e a recuperação de informações que são retiradas de dados e documentos eletrônicos em qualquer parte do seu ciclo de vida.
+                              </p>  
+                              <p>
+                                <a href="blog_ecm.html" class="btn btn-flat style2" target="_blank">Continue Lendo</a>
+                              </p>
+                              <div class="love-post-btn">
+                                <span><i class="fa fa-code"></i></span>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="blog-post" th:each="post : ${posts}">
+                          	<input type="hidden" id="idCriptografado" th:name="${post.idCriptografado}" th:value="${post.idCriptografado}"/>
+                            <div class="row">
+                              <div class="col-md-8">
+                                <h3 class="title-post"><a th:href="${'/blog/' + post.html}"><i class="fa fa-users"></i> <span th:text="${post.titulo}"></span></a></h3>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="blog-date">
+                                  <span th:text="${post.dataPostagemFormatada}"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="body-post">
+                              <div class="imgWrapper">
+                                <img th:src="${post.imagem}" class="img-full blog-img" alt=""/>
+                              </div>
+                              <p>Escrito por: <strong><span th:text="${post.criador.nome}"></span></strong></p>
+                              <p th:text="${post.textoInicial}"></p>  
+                              <p>
+                                <a th:href="${'/blog/' + post.id}" class="btn btn-flat style2" target="_blank">Continue Lendo</a>
+                              </p>
+                              <div class="love-post-btn">
+                              	<span><i class="fa fa-code"></i></span>
+<!-- 	                            <a th:href="${'javascript: init_btn_love('+post.id+')'}"><span><i class="fa fa-heart"></i> <b th:text="${post.likes}"></b></span></a> -->
+	                          </div>
+                            </div>
+                          </div>
+                          
+
+                        </div>
+                        <!-- =========
+                        End blog post section
+                        ===================================-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- =========
+                End Blog tab content section
+                ===================================-->
+
+
+                <!-- =========
+                Start Contact tab content section
+                ===================================-->
+                <div id='contact' class="tab-pane fade">
+                  <div class="body-content">
+                    <h3 class="title with-icon"><span class="fa fa-coffee icn-title"></span> Me mande uma mensagem, terei prazer em responder!</h3>
+
+                    <!-- =========
+                    Start map section
+                    ===================================-->
+                    <div class="map-area">
+                      <div id="map"></div>
+                      <div class="info-map">
+                        <h3>Informações de Contato</h3>
+                        <ul class="list-unstyled list-info">
+                          <li><i class="fa fa-home"></i> Rio de Janeiro, Brasil</li>
+                          <li><i class="fa fa-envelope"></i> julio.silveira.rj@gmail.com</li>
+                          <li><i class="fa fa-phone"></i> +55 21 98867-9866</li>
+                          <li><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/j%C3%BAlio-silveira-632b8689" target="_blank">LinkedIn</a></li>
+                          <li><i class="fa fa-github"></i> <a href="https://github.com/juliosilveira77" target="_blank">GitHub</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="deviter"></div>
+                    <br/>
+                    <!-- =========
+                    End map section
+                    ===================================-->
+
+
+                    <!-- =========
+                    Start form contact section
+                    ===================================-->
+                    <!-- <form action="http://www.bluehost.com/bluemail" enctype="multipart/form-data" method="POST">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="FullnameForm">Nome</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Nome">
+                            <input type="hidden" name="sendtoemail" value="contato@juliosilveiradev.com">
+                            <input type="hidden" name="subject" value="juliosilveiradev.com - Contato">
+                            <input type="hidden" name="redirect" value="http://juliosilveiradev.com">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="CompanyForm">Empresa</label>
+                            <input type="text" class="form-control" id="empresa" placeholder="Empresa">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="EmailForm">Email</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="PhoneForm">Celular</label>
+                            <input type="text" class="form-control" id="phone" placeholder="Celular">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="MesageForm">Mensagem</label>
+                        <textarea class="form-control" rows="8" name="message" id="message" placeholder="Em que posso te ajudar?"></textarea>
+                      </div>
+
+                      <button type="submit" class="btn btn-flat btn-lg"><span class="glyphicon glyphicon-send"></span> Enviar</button>
+                    </form> -->
+                    <!-- =========
+                    End form contact section
+                    ===================================-->
+
+                  </div>
+                </div>
+
+              </div>
+              <!-- =========
+              End tab content section
+              ===================================-->
+
+
+              <a id="backtotop" href="#"><i class="fa fa-arrow-up"></i></a>
+              <div class="bg-line"></div>
+            </section>
+            <!-- =========
+            End Content section
+            ===================================-->
+
+
+            <!-- =========
+            Start Footer section
+            ===================================-->
+            <footer class="footer">
+              © 2016 Júlio Silveira
+            </footer>
+            <!-- =========
+            End Footer section
+            ===================================-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =========
+    End Wrapper Page
+    ===================================-->
+
+    <!-- =========
+    Text Showup Wait Document Ready
+    ===================================-->
+    <div id="wait-page" class="text-center">Carregando...</div>
+
+    <!-- =========
+    Link Config Custom styles
+    ===================================-->
+
+
+    <!-- =========
+    Javascript load 
+    ===================================-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- jQuery animation page loader -->
+    <script src='assets/js/pace.min.js'></script>
+
+    <!-- JS maps for gmap3 JavaScript plugins) -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQmOWwSPTGyGB0BCxMrbrBclB4zp4ALTA"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.autofix_anything.js"></script>
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+    <script src='assets/js/gmap3.min.js'></script>
+
+    <script src='assets/js/jquery.magnific-popup.min.js'></script>
+
+    <!-- Configuration app js -->
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>

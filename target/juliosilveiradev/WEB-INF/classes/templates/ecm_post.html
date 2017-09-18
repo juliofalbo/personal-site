@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Júlio Silveira</title>
+    <!-- Bootstrap -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- CSS Font Icon and Plugins -->
+    <link href="/assets/font/fa/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/assets/font/tello/css/fontello.css" rel="stylesheet" />
+    <link href="/assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="/assets/css/animation.css" rel="stylesheet" />
+
+    <!-- Theme of Design -->
+    <link href="/assets/css/style.css" rel="stylesheet" />   
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/assets/images/faicon.png" />
+    <link rel="apple-touch-icon" sizes="129x129" href="/assets/images/icon.png" /> 
+    
+    <link href="/assets/css/yourcss.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- =========
+    Start Wrapper Page
+    ===================================-->
+    <div id="wrapper">
+      <div class="container" >
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+
+            <!-- =========
+            Start portrait section
+            ===================================-->
+            <header class="portrait">
+              <div class="bg-line"></div>
+              <div class="body-portrait">
+
+                <!-- =========
+                Start Note Slider
+                ===================================-->
+                <div class="box-note">
+                  <div id="slider-note" class="carousel slide" data-ride="carousel" data-interval="10000">
+                    <div class="carousel-inner">
+                      <div class="item active">
+                    	
+                    		<div th:if="${retorno}">
+		                    	<span th:text="${retorno}"></span>
+		                    </div>
+		                     <div th:unless="${retorno}">
+	                       		"Any fool can write code that a computer can understand. Good programmers write code that humans can understand." - <i>Martin Fowler</i>
+	                       	</div>
+	                       	
+	                    </div>
+	                    
+	                    <div class="item">
+	                        Encantado com a dinâmica junto ao sistema operacional, escolhi o Java para ser a linguagem de programação na qual iria me especializar.
+	                    </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- =========
+                End Note Slider
+                ===================================-->
+
+                <!-- =========
+                Start portrait image Section
+                ===================================-->
+                <div class="portrait-img-area">
+                  <img src="/assets/images/avatar.png" alt="avatar" class="avatar"/>
+                  <div class="profile-links">
+                    <a href="https://github.com/juliosilveira77" class="facebook" target="_blank" data-toggle="tooltip" data-placement="left" title="GitHub"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/j%C3%BAlio-silveira-632b8689" class="twitter" target="_blank" data-toggle="tooltip" data-placement="right" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+                <!-- =========
+                End  portrait image Section
+                ===================================-->
+
+                <!-- =========
+                Show Yor Name Section
+                ===================================-->
+                <h1 class="name">Júlio Silveira <small>full stack web developer</small></h1>
+
+                <!-- =========
+                Special Nav for BLog page
+                ===================================-->
+                <nav class="nav-blog">
+                  <a href="index.html" class="btn btn-left" data-toggle="tooltip" data-placement="left" title="" data-original-title="Home"> <i class="fa fa-home"></i></a>
+                  <a href="blog_list.html" class="btn btn-big-blog">Blog</a>
+                  <a href="#" class="btn btn-right" data-toggle="tooltip" data-placement="right" title="" data-original-title="Atualizar Página"> <i class="fa fa-refresh"></i></a>
+                </nav>
+
+                <!-- =========
+                Start Show Yor Name Section
+                ===================================-->
+
+              </div>
+            </header>
+            <!-- =========
+            End portrait section
+            ===================================-->
+
+            <!-- =========
+            Start Content section
+            ===================================-->
+            <section class="content open" id="main-content">
+              <div class="body-content" id="blog">
+                <div class="row">
+                  <div class="col-md-10 col-md-offset-1">
+                    <div class="blog-posts">
+                      <div class="blog-post">
+                        <div class="row">
+                          <div class="col-md-8">
+                            <h3 class="title-post"><a href="blog_single.html"><i class="fa fa-users"></i> O que é ECM?</a></h3>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="blog-date">
+                              3 de Novembro de 2016
+                            </div>
+                          </div>
+                        </div>
+                        <div class="body-post">
+                          <div class="imgWrapper">
+                            <img src="/assets/images/blog/blog1.png" class="img-full blog-img" alt="" />
+                          </div>
+                          <p>Escrito por: <strong>Júlio Silveira</strong></p>
+                          <p>
+                             Primeiramente gostaria de deixar aqui a definição oficial, publicada em 2008 pela <a href="http://www.aiim.org/" target="_blank">AIIM (Association for Information and Image Management - Associação para a Gestão de Informação e Imagem)</a>.
+                          </p>   
+                          <blockquote>
+                          Gestão de Conteúdo Corporativo (ECM) são as estratégias, métodos e ferramentas utilizadas para capturar, gerenciar, armazenar, preservar e oferecer conteúdo e documentos relacionados com processos organizacionais. ECM são ferramentas e estratégias que permitem a gestão de uma organização da informação não estruturada, onde quer que a informação exista.
+                          </blockquote>
+                          <p>
+                          Muitas pessoas buscam em sites e não entendem as vantagens de um ECM. Podemos definir ECM como um grupo de tecnologias que facilitam o armazenamento, a busca e a recuperação de informações que são retiradas de dados e documentos eletrônicos em qualquer parte do seu ciclo de vida.
+                          </p>
+                          <p>
+                            <h4>Então surge a pergunta: Como isso pode ser útil para a minha empresa?</h4>
+                          </p>
+                          <p>
+                            Vamos lá, todo bom empresário almeja 3 itens cruciais para o sucesso de uma empresa.
+                          </p>
+                          <ul>
+                            <li>
+                              Aumento do Lucro
+                            </li>
+                            <li>
+                              Redução de Custos
+                            </li>
+                            <li>
+                              Melhorar o atendimento ao Cliente
+                            </li>
+                          </ul>
+                          <p>
+                          Com o uso de um sistema ECM, além de automatizar os processos de sua empresa, liberar espaço físico - tendo em vista que os documentos serão gerenciados pelo GED (Gerenciamento de Documentos Eletrônicos) - e minimizar o número de funcionários, é possível estruturar dados não estruturados e com isso agilizar e dar qualidade à sua busca de informações, podendo assim ter uma rápida resposta para um eventual problema.
+                          </p>
+                          <p>
+                            Para podermos entender melhor um sistema ECM, lhes apresento o Fusion ECM Suite, da empresa em que trabalho, a <a href="https://www.neomind.com.br/fusion/site/#/home" target="_blank"><strong style="color: #cd304e">Neomind</strong></a>.
+                          </p>
+                          <ul>
+                            <li>
+                              <a href="https://www.neomind.com.br/fusion/site/#/solutions#fusion-bpm" target="_blank">Fusion Workflow/BPM (Gerenciamento dos processos de negócio BPM)</a>
+                            </li>
+                            <li>
+                              <a href="https://www.neomind.com.br/fusion/site/#/solutions#fusion-bi" target="_blank">Fusion BI (Gerenciador de análises de negócio)</a>
+                            </li>
+                            <li>
+                              <a href="https://www.neomind.com.br/fusion/site/#/solutions#fusion-ged" target="_blank">Fusion GED (Gerenciador eletrônico de documentos)</a>
+                            </li>
+                            <li>
+                              <a href="https://www.neomind.com.br/fusion/site/#/solutions#fusion-capture" target="_blank">Fusion Capture (Gerenciador de captura e conectividade em processamento de imagens)</a>
+                            </li>
+                            <li>
+                              <a href="https://www.neomind.com.br/fusion/site/#/solutions#fusion-portal" target="_blank">Fusion Portal (Gerenciador de portal corporativo)</a>
+                            </li>
+                          </ul>
+                          <h4>Benefícios do Fusion ECM Suite</h4>
+                          <p>
+                            O Fusion ECM Suite é visto no mercado como um diferencial competitivo que permite gerenciar as informações de forma ágil, trazendo para seus clientes inúmeras vantagens, por exemplo:
+                          </p>
+                          <ul>
+                            <li>
+                                <strong>Agilidade</strong>
+                            </li>
+                            <ul>
+                              <li>
+                                Velocidade na busca de documentos, respostas rápidas e precisas, aumentando assim a qualidade dos dados enviados para o Cliente
+                              </li>
+                            </ul>
+
+                            <li>
+                              <strong>Gerenciamento de Processos</strong>
+                            </li>
+                            <ul>
+                              <li>
+                                Minimiza recursos humanos e aumenta a produtividade
+                              </li>
+                            </ul>
+
+                            <li>
+                              <strong>Gerenciamento de Documentos</strong>
+                            </li>
+                            <ul>
+                              <li>
+                                Reduz o risco de perda ou danificação de documentos. Criando também um versionamento para cada documento publicado
+                              </li>
+                            </ul>
+
+                            <li>
+                              <strong>Segurança</strong>
+                            </li>
+                            <ul>
+                              <li>
+                                Com a utilização do nosso GED, nosso cliente conta com a possibilidade de exibição de documentos por Papéis, Grupos e Usuários, para que assim cada documento seja protegido conforme vontade do criador
+                              </li>
+                            </ul>
+
+                            <li>
+                              <strong>Ganho de Espaço Físico</strong>
+                            </li>
+                            <ul>
+                              <li>
+                                Com a utilização do GED, todos os documentos que antes eram em papéis hoje são digitais
+                              </li>
+                            </ul>
+
+                            <li>
+                              <strong>Controle de Versionamento</strong>
+                            </li>
+                            <ul>
+                              <li>
+                                Esta funcionalidade é importante pois, ao longo dos processos/projetos os conteúdos sofrem atualizações. Estas modificações devem ter seu histórico registrado para possibilitar um eventual rastreamento
+                              </li>
+                            </ul>
+
+                            <li>
+                              <strong>
+                                Melhoria na tomada de decisões
+                              </strong>
+                            </li>
+                            <ul>
+                              <li>
+                                O acesso ágil às informações é essencial para a tomada de decisões rápidas e assertivas
+                              </li>
+                            </ul>
+
+                            <li>
+                              <strong>
+                                Desburocratização 
+                              </strong>
+                            </li>
+                            <ul>
+                              <li>
+                                Com todo o processo do cliente automatizado, vão aparecendo etapas que muitas vezes dificultavam a conclusão do fluxo e que com uma visão diferente é passível de ser removida do processo, e com isso trazendo mais dinamismo e agilidade na solução
+                              </li>
+                            </ul>
+                            
+                            <li>
+                              <strong>
+                                Redução de custos 
+                              </strong>
+                            </li>
+                            <ul>
+                              <li>
+                                Economia em cópias e recursos humanos
+                              </li>
+                            </ul>
+                            
+                            <li>
+                              <strong>
+                                Base de Conhecimento
+                              </strong>
+                            </li>
+                            <ul>
+                              <li>
+                                Permite que as organizações gerem uma base única do conhecimento
+                              </li>
+                            </ul>
+                            
+                            <li>
+                              <strong>
+                                Integração com outros sistemas
+                              </strong>
+                            </li>
+                            <ul>
+                              <li>
+                                Hoje o Fusion ECM Suite conta com um cadastro de bases externas de fácil uso para o cliente
+                              </li>
+                            </ul>
+                            
+                            <li>
+                              <strong>
+                                Sustentabilidade
+                              </strong>
+                            </li>
+                            <ul>
+                              <li>
+                                Com o uso do GED os documentos em papel são extintos, com isso além da redução de custos a empresa se torna uma empresa sustentável e diminui o impacto no meio ambiente
+                              </li>
+                            </ul>
+                            
+                          </ul>
+
+                          <p>
+                            Tendo em vista os pontos levantados nesse artigo, podemos concluir que o ECM se trata de um conjunto de estratégias, ferramentas para capturar, armazenar e gerenciar conteúdos corporativos.
+                          </p>
+
+                          <p>
+                            Caso queira saber mais, clique <a href="http://www.aiim.org/What-is-ECM-Enterprise-Content-Management" target="_blank"><strong>aqui</strong></a> e veja um estudo sobre ECM da AIIM.
+                          </p>
+                          
+                          
+                          <br />
+                          <div class="love-post-btn">
+                            <a href="#"><span><i class="fa fa-heart"></i> 3</span></a>
+                          </div>
+                          <div class="bottom-post">
+                            <h5 class="bold">Tags:</h5>
+                            <ul class="list-inline list-tags">
+                              <li><a href="#" title="audio">audio</a></li>
+                              <li><a href="#" title="creative">creative</a></li>
+                              <li><a href="#" title="gallery">gallery</a></li>
+                              <li><a href="#" title="image">image</a></li>
+                              <li><a href="#" title="news">news</a></li>
+                              <li><a href="#" title="photography">photography</a></li>
+                              <li><a href="#" title="popular">popular</a></li>
+                              <li><a href="#" title="text">text</a></li>
+                              <li><a href="#" title="vimeo">vimeo</a></li>
+                              <li><a href="#" title="youtube">youtube</a></li>
+                            </ul>
+
+                            <h5 class="bold">Realated Post:</h5>
+                            <ul class="list-unstyled list-related">
+                              <li><a href="#">Front End Developer who focuses on writing clean</a></li>
+                              <li><a href="#">How to create elegant and efficient code</a></li>
+                              <li><a href="#">I Love HTML5, CSS3, WordPress and a touch of jQuery </a></li>
+                              <li><a href="#">Free modern multipurposes landing page template</a></li>
+
+                            </ul>
+
+                          </div>
+                          
+                        </div>
+                        
+                        
+                        <h3 class="title with-icon"><span class="fa  fa-comments-o icn-title"></span> <span th:text="${post.qtdDeComentarios}"></span> Comentários</h3>
+                        <div class="box-block box-comments">
+                          
+                          <div class="media" th:each="comentario : ${post.comentarios}">
+                            <a class="pull-left" href="#">
+                              <img class="media-object img-circle" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIj48L3JlY3Q+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" />
+                            </a>
+                            <div class="media-body">
+                              <h4 class="media-heading"><span th:text="${comentario.remetente}"></span></h4>
+                              <p>
+                              	<span th:text="${comentario.mensagem}"></span>
+                              </p>
+                            </div>
+                          </div>
+                          
+                        </div>
+
+                        <h3 class="title with-icon"><span class="fa  fa-comment-o icn-title"></span> Deixe seu comentário</h3>
+                        <div class="box-block">
+                          <form action="#" th:action="@{/salvarComentario}" th:object="${novoComentario}" method="post" enctype="multipart/form-data">
+                          <input type="hidden" id="idPost" th:name="idPost" th:value="${post.id}"/>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="remetente">Nome</label>
+                                  <input type="text" th:field="*{remetente}" class="form-control" name="remetente" id="remetente" placeholder="Nome" required="required" />
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="email">Email</label>
+                                  <input type="email" th:field="*{email}" class="form-control" name="email" id="email" placeholder="Email" required="required" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="site">Site</label>
+                              <input type="text" th:field="*{site}" class="form-control" name="site" id="site" placeholder="Site" />
+                            </div>
+
+                            <div class="form-group">
+                              <label for="mensagem">Mensagem</label>
+                              <textarea class="form-control" th:field="*{mensagem}" rows="8" name="mensagem" id="mensagem" placeholder="Me fale o que achou ou tire uma dúvida!" required="required" ></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-flat btn-lg">Comentar</button>
+                          </form>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a id="backtotop" href="#"><i class="fa fa-arrow-up"></i></a>
+              <div class="bg-line"></div>
+            </section>
+
+            <!-- =========
+            End Content section
+            ===================================-->
+
+
+            <!-- =========
+            Start Footer section
+            ===================================-->
+            <footer class="footer">
+              © 2016 Júlio Silveira
+            </footer>
+            <!-- =========
+            End Footer section
+            ===================================-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =========
+    End Wrapper Page
+    ===================================-->
+
+    <!-- =========
+    Text Showup Wait Document Ready
+    ===================================-->
+    <div id="wait-page" class="text-center">Carregando...</div>
+
+
+    <!-- =========
+    Javascript load 
+    ===================================-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    
+    <!-- JS maps for gmap3 JavaScript plugins) -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQmOWwSPTGyGB0BCxMrbrBclB4zp4ALTA"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/bootstrap/js/bootstrap.js"></script>
+    <script src="/assets/js/jquery.autofix_anything.js"></script>
+    <script src="/assets/js/jquery.mixitup.min.js"></script>
+    <script src='/assets/js/gmap3.min.js'></script>
+    <script src='/assets/js/pace.min.js'></script>
+    <script src='/assets/js/jquery.magnific-popup.min.js'></script>
+
+    <!-- Configuration app js -->
+    <script src="/assets/js/app.js"></script>
+
+  </body>
+</html>
